@@ -1,0 +1,3800 @@
+// 自動生成ファイル：直接編集せず data/labs.json を編集して tools/build_data.py を実行
+window.LABS_UPDATED = "2026-10-29";
+window.LABS = [
+ {
+  "id": "hokudai-marine-microbiology",
+  "name": "海洋微生物学研究室",
+  "institution": "北海道大学 大学院水産科学研究院",
+  "prefecture": "北海道",
+  "mapCity": "函館市",
+  "latitude": 41.77,
+  "longitude": 140.73,
+  "scope": "core",
+  "leaders": "澤辺 智雄 ほか",
+  "themes": [
+   "生態・物質循環",
+   "培養・生理",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析"
+  ],
+  "tags": [
+   "Vibrio",
+   "海洋細菌",
+   "共生",
+   "海洋バイオ"
+  ],
+  "description": "海洋細菌の生理生態、多様性、宿主との相互作用とバイオテクノロジーを研究。",
+  "url": "https://micro.fish.hokudai.ac.jp/labs/index.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-yoshizawa",
+  "name": "海洋資源環境学分野（吉澤グループ）",
+  "institution": "東京大学 大学院新領域創成科学研究科・大気海洋研究所",
+  "prefecture": "千葉県",
+  "mapCity": "柏市",
+  "latitude": 35.87,
+  "longitude": 139.97,
+  "scope": "core",
+  "leaders": "吉澤 晋",
+  "themes": [
+   "ゲノム・進化",
+   "培養・生理",
+   "ウイルス・宿主",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌",
+   "ウイルス"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析",
+   "海洋観測"
+  ],
+  "tags": [
+   "ロドプシン",
+   "生物発光",
+   "比較ゲノム",
+   "海洋ウイルス"
+  ],
+  "description": "海洋微生物の光利用、生物発光、微生物・ウイルス相互作用を分離培養とゲノム解析から研究。",
+  "url": "https://genedynamics.aori.u-tokyo.ac.jp/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-hamasaki",
+  "name": "濵﨑研究室",
+  "institution": "東京大学 大気海洋研究所 海洋生態系科学部門・微生物グループ",
+  "prefecture": "千葉県",
+  "mapCity": "柏市",
+  "latitude": 35.87,
+  "longitude": 139.97,
+  "scope": "core",
+  "leaders": "濵﨑 恒二",
+  "themes": [
+   "生態・物質循環",
+   "ゲノム・進化",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌",
+   "ウイルス"
+  ],
+  "methods": [
+   "海洋観測",
+   "ゲノム解析",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "海洋微生物",
+   "微生物群集",
+   "生物多様性",
+   "物質循環"
+  ],
+  "description": "海洋細菌群集の多様性、炭素・栄養塩循環、海洋大気境界領域の微生物動態を研究。",
+  "url": "https://www.u-tokyo.ac.jp/focus/ja/people/people001530.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "AORI 教員一覧",
+    "url": "https://www.aori.u-tokyo.ac.jp/staff/"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-shiozaki",
+  "name": "塩崎研究グループ",
+  "institution": "東京大学 大気海洋研究所 海洋生態系科学部門・微生物グループ",
+  "prefecture": "千葉県",
+  "mapCity": "柏市",
+  "latitude": 35.87,
+  "longitude": 139.97,
+  "scope": "core",
+  "leaders": "塩崎 拓平",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "ゲノム解析",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "窒素固定",
+   "シアノバクテリア",
+   "植物プランクトン",
+   "極域海洋"
+  ],
+  "description": "海洋の窒素固定微生物・植物プランクトンの生態と窒素循環、極域海洋生態系を研究。",
+  "url": "https://sites.google.com/view/takuheishiozaki/",
+  "linkType": "個人HP",
+  "extraLinks": [
+   {
+    "label": "東京大学公式プロフィール",
+    "url": "https://www.u-tokyo.ac.jp/focus/ja/people/k0001_02977.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-aquatic-environment",
+  "name": "水圏生物環境学研究室",
+  "institution": "東京大学 大学院農学生命科学研究科",
+  "prefecture": "東京都",
+  "mapCity": "東京都文京区",
+  "latitude": 35.71,
+  "longitude": 139.76,
+  "scope": "core",
+  "leaders": "高橋 一生・児玉 武稔・佐藤 拓哉・岩滝 光儀",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "沿岸域",
+   "物質循環",
+   "植物プランクトン"
+  ],
+  "description": "海洋の物質循環、細菌・植物プランクトンの生態と水圏環境保全をフィールド・室内実験から研究。",
+  "url": "https://fol.fs.a.u-tokyo.ac.jp/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tumsat-applied-micro",
+  "name": "応用微生物学研究室",
+  "institution": "東京海洋大学 海洋生命科学部",
+  "prefecture": "東京都",
+  "mapCity": "東京都港区",
+  "latitude": 35.63,
+  "longitude": 139.75,
+  "scope": "core",
+  "leaders": "小林 武志・寺原 猛",
+  "themes": [
+   "培養・生理",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "微生物分離",
+   "応用微生物",
+   "微生物機能"
+  ],
+  "description": "多様な微生物の分離と機能解析を通じ、微生物の基礎研究と応用利用を進める。",
+  "url": "https://sites.google.com/view/oubi",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kitasato-environmental-micro",
+  "name": "環境微生物学研究室",
+  "institution": "北里大学 海洋生命科学部",
+  "prefecture": "神奈川県",
+  "mapCity": "相模原市",
+  "latitude": 35.57,
+  "longitude": 139.4,
+  "scope": "core",
+  "leaders": "小檜山 篤志 ほか",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "渦鞭毛藻",
+   "有害藻類",
+   "海洋プランクトン"
+  ],
+  "description": "微細藻類・細菌・プランクトンを対象に、有害藻類ブルームや低次食物網を研究。",
+  "url": "https://www.kitasato-u.ac.jp/mb/lab/bisei/",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kyoto-molecular-micro",
+  "name": "海洋分子微生物学分野",
+  "institution": "京都大学 大学院農学研究科",
+  "prefecture": "京都府",
+  "mapCity": "京都市",
+  "latitude": 35.03,
+  "longitude": 135.78,
+  "scope": "core",
+  "leaders": "吉田 天士・神川 龍馬",
+  "themes": [
+   "ウイルス・宿主",
+   "生態・物質循環",
+   "ゲノム・進化",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌",
+   "古細菌",
+   "ウイルス",
+   "微細藻類"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "培養・生理実験",
+   "バイオインフォマティクス"
+  ],
+  "tags": [
+   "海洋ウイルス",
+   "シアノファージ",
+   "一酸化炭素代謝"
+  ],
+  "description": "海洋原核生物とウイルスの生態・進化、微生物間相互作用、代謝機能などを研究。",
+  "url": "https://www.microbiology.marine.kais.kyoto-u.ac.jp/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kyoto-environmental-micro",
+  "name": "海洋環境微生物学分野",
+  "institution": "京都大学 大学院農学研究科",
+  "prefecture": "京都府",
+  "mapCity": "京都市",
+  "latitude": 35.03,
+  "longitude": 135.78,
+  "scope": "core",
+  "leaders": "澤山 茂樹・中川 聡",
+  "themes": [
+   "微細藻・原生生物",
+   "培養・生理",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "ラビリンチュラ",
+   "有用物質",
+   "深海熱水",
+   "微細藻類"
+  ],
+  "description": "微細藻類・ラビリンチュラ類の有用物質生産と、海洋極限環境微生物の生理生態を研究。",
+  "url": "http://www.kanbi.marine.kais.kyoto-u.ac.jp/index.html",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "京都大学 分野紹介",
+    "url": "https://www.appbio.kais.kyoto-u.ac.jp/laboratory/kaiyoukankyoubiseibutsu.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kyoto-microbial-eco-evo",
+  "name": "緒方研究室",
+  "institution": "京都大学 化学研究所",
+  "prefecture": "京都府",
+  "mapCity": "宇治市",
+  "latitude": 34.9,
+  "longitude": 135.8,
+  "scope": "core",
+  "leaders": "緒方 博之・遠藤 寿 ほか",
+  "themes": [
+   "ウイルス・宿主",
+   "ゲノム・進化",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "ウイルス",
+   "真核微生物",
+   "細菌"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "バイオインフォマティクス",
+   "海洋観測"
+  ],
+  "tags": [
+   "巨大ウイルス",
+   "メタオミクス",
+   "Tara Oceans"
+  ],
+  "description": "巨大ウイルスの進化と機能、海洋微生物生態系の動態・環境影響をオミクス解析などで研究。",
+  "url": "https://cls.kuicr.kyoto-u.ac.jp/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kochi-aquatic-virus",
+  "name": "水圏ウイルス研究室（長﨑研究室）",
+  "institution": "高知大学 農林海洋科学部",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "core",
+  "leaders": "長﨑 慶三",
+  "themes": [
+   "ウイルス・宿主",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "ウイルス",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "海洋観測"
+  ],
+  "tags": [
+   "藻類ウイルス",
+   "赤潮",
+   "沿岸生態系"
+  ],
+  "description": "沿岸域の赤潮原因プランクトンと感染性ウイルスの生態・宿主との相互作用を研究。",
+  "url": "https://www.cc.kochi-u.ac.jp/~nagasaki/index.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kochi-microbiology",
+  "name": "微生物学研究室（海洋深層水研究室）",
+  "institution": "高知大学 農林海洋科学部",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "core",
+  "leaders": "寺本 真紀",
+  "themes": [
+   "応用・バイオ",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "海洋深層水",
+   "プラスチック分解",
+   "有用細菌"
+  ],
+  "description": "寺本真紀研究室。海洋深層水や深海生物の細菌、プラスチック分解菌、環境微生物の生理生態と応用。",
+  "url": "https://deepsea.jimdoweb.com/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "jamstec-geomicro",
+  "name": "地球微生物学研究グループ",
+  "institution": "JAMSTEC 高知コア研究所",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "core",
+  "leaders": "星野 辰彦・諸野 祐樹・菊池 早希子・山田 洋輔",
+  "themes": [
+   "生態・物質循環",
+   "ゲノム・進化",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌",
+   "古細菌"
+  ],
+  "methods": [
+   "海洋観測",
+   "ゲノム解析",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "海底下生命圏",
+   "地球微生物学",
+   "元素循環"
+  ],
+  "description": "海水・海底堆積物・海底下の微生物について、生命の限界や進化、物質循環を研究。",
+  "url": "https://www.jamstec.go.jp/kochi/j/groups/geomicrobiology.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kyushu-marine-resource-chem",
+  "name": "海洋資源化学研究室",
+  "institution": "九州大学 大学院農学研究院",
+  "prefecture": "福岡県",
+  "mapCity": "福岡市",
+  "latitude": 33.6,
+  "longitude": 130.23,
+  "scope": "core",
+  "leaders": "沖野 望・石橋 洋平",
+  "themes": [
+   "微細藻・原生生物",
+   "応用・バイオ",
+   "培養・生理"
+  ],
+  "organisms": [
+   "真核微生物",
+   "細菌"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "分子生物学"
+  ],
+  "tags": [
+   "ラビリンチュラ",
+   "脂質代謝",
+   "有用物質"
+  ],
+  "description": "ラビリンチュラ類の高度不飽和脂肪酸・複合脂質代謝や海洋微生物由来酵素を研究。",
+  "url": "http://www.agr.kyushu-u.ac.jp/lab/kaishika/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "九州大学 研究室紹介",
+    "url": "https://ag.kyushu-u.ac.jp/organization/teacher/lab/post_94/index.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "mie-marine-micro",
+  "name": "海洋微生物学研究室",
+  "institution": "三重大学 大学院生物資源学研究科",
+  "prefecture": "三重県",
+  "mapCity": "津市",
+  "latitude": 34.73,
+  "longitude": 136.51,
+  "scope": "core",
+  "leaders": "田中 礼士",
+  "themes": [
+   "応用・バイオ",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌",
+   "真核微生物",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "海洋微生物",
+   "有用微生物",
+   "分離培養",
+   "微生物制御"
+  ],
+  "description": "海洋由来細菌・真菌・単細胞藻類などの探索、分離、特性解析と有効利用を研究。",
+  "url": "https://www.bio.mie-u.ac.jp/seimei/marine/bisei/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "三重大学 研究室紹介",
+    "url": "https://www.bio.mie-u.ac.jp/academics/master-15/dep03/course08/lab56/"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kindai-aquatic-environment",
+  "name": "水族環境学研究室",
+  "institution": "近畿大学 農学部水産学科",
+  "prefecture": "奈良県",
+  "mapCity": "奈良市",
+  "latitude": 34.68,
+  "longitude": 135.79,
+  "scope": "core",
+  "leaders": "谷口 亮人・永田 恵里奈",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "微生物海洋学",
+   "水圏微生物学"
+  ],
+  "description": "微生物海洋学・水圏微生物学を専門とする教員が所属する水族環境学研究室。",
+  "url": "https://sites.google.com/nara.kindai.ac.jp/lesa-kindai",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "hokudai-koji-suzuki",
+  "name": "鈴木光次研究室",
+  "institution": "北海道大学 大学院地球環境科学研究院",
+  "prefecture": "北海道",
+  "mapCity": "札幌市",
+  "latitude": 43.07,
+  "longitude": 141.35,
+  "scope": "core",
+  "leaders": "鈴木 光次",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "アイスアルジー",
+   "一次生産"
+  ],
+  "description": "北太平洋や極域の植物プランクトン・海氷藻類の生理生態と海洋物質循環を研究。",
+  "url": "https://pablos.ees.hokudai.ac.jp/kojis/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tohoku-biolocean",
+  "name": "生物海洋学分野",
+  "institution": "東北大学 大学院農学研究科",
+  "prefecture": "宮城県",
+  "mapCity": "仙台市",
+  "latitude": 38.27,
+  "longitude": 140.87,
+  "scope": "core",
+  "leaders": "山口 篤・西谷 豪",
+  "themes": [
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "赤潮",
+   "プランクトン",
+   "有害藻類"
+  ],
+  "description": "海洋プランクトンの生態と有害藻類の発生・分布などを研究。",
+  "url": "https://sites.google.com/tohoku.ac.jp/biolocean",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "waseda-takeyama",
+  "name": "生命分子工学研究室（竹山研究室）",
+  "institution": "早稲田大学 先進理工学研究科",
+  "prefecture": "東京都",
+  "mapCity": "東京都新宿区",
+  "latitude": 35.71,
+  "longitude": 139.71,
+  "scope": "related",
+  "leaders": "竹山 春子",
+  "themes": [
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌",
+   "ウイルス"
+  ],
+  "methods": [
+   "ゲノム解析"
+  ],
+  "tags": [
+   "シングルセルゲノム",
+   "海洋メタオミクス",
+   "難培養"
+  ],
+  "description": "環境微生物を対象とした単一細胞解析・ゲノム工学。海洋微生物研究は研究対象の一部。",
+  "url": "https://www.takeyama-lab.sci.waseda.ac.jp/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tuat-tanaka",
+  "name": "田中・片岡研究室（田中グループ）",
+  "institution": "東京農工大学 工学研究院",
+  "prefecture": "東京都",
+  "mapCity": "小金井市",
+  "latitude": 35.7,
+  "longitude": 139.5,
+  "scope": "core",
+  "leaders": "田中 剛・片岡 孝介 ほか",
+  "themes": [
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "微細藻類",
+   "光合成微生物",
+   "代謝工学"
+  ],
+  "description": "海洋微細藻類・光合成微生物のカルチャーコレクションと有用物質生産を研究。",
+  "url": "https://web.tuat.ac.jp/~ttanaka/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "fukui-aquatic-micro",
+  "name": "水圏微生物生態学研究室",
+  "institution": "福井県立大学 海洋生物資源学部",
+  "prefecture": "福井県",
+  "mapCity": "小浜市",
+  "latitude": 35.49,
+  "longitude": 135.75,
+  "scope": "core",
+  "leaders": "近藤 竜二・片岡 剛文・高尾 祥丈",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌",
+   "ウイルス",
+   "真核微生物"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "硫黄循環",
+   "微生物群集",
+   "水圏生態"
+  ],
+  "description": "水圏の微生物の群集構造、相互作用と物質循環を分離培養や遺伝子解析で研究。",
+  "url": "https://sites.google.com/g.fpu.ac.jp/mast/%E7%A0%94%E7%A9%B6%E5%AE%A4%E6%95%99%E5%93%A1/%E6%B0%B4%E5%9C%8F%E5%BE%AE%E7%94%9F%E7%89%A9%E7%94%9F%E6%85%8B%E5%AD%A6%E7%A0%94%E7%A9%B6%E5%AE%A4",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "fukui-algal-life",
+  "name": "藻類生命科学研究室",
+  "institution": "福井県立大学 海洋生物資源学部",
+  "prefecture": "福井県",
+  "mapCity": "小浜市",
+  "latitude": 35.49,
+  "longitude": 135.75,
+  "scope": "related",
+  "leaders": "吉川 伸哉・佐藤 晋也・山田 和正",
+  "themes": [
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "珪藻",
+   "パルマ藻",
+   "シアノバクテリア"
+  ],
+  "description": "海藻の形態形成、ラン藻の細胞外多糖、海洋微細藻類パルマ藻などを研究。",
+  "url": "https://sites.google.com/g.fpu.ac.jp/mast/研究室教員/藻類生命科学研究室",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "大学公式 研究室紹介",
+    "url": "https://www.fpu.ac.jp/kaiyo/kenkyu/seibutsu/page/d152721.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tsukuba-aquatic-ecology",
+  "name": "水圏生態学研究室（大森グループ）",
+  "institution": "筑波大学 生命環境系",
+  "prefecture": "茨城県",
+  "mapCity": "つくば市",
+  "latitude": 36.09,
+  "longitude": 140.11,
+  "scope": "core",
+  "leaders": "大森 裕子",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "海洋微生物",
+   "溶存有機物",
+   "炭素循環"
+  ],
+  "description": "海洋微生物が関わる有機物循環、揮発性有機化合物やプラスチスフィアを研究。",
+  "url": "https://www.u.tsukuba.ac.jp/~omori.yuko.ft/index.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kagoshima-microbiology",
+  "name": "微生物学研究室（水圏環境保全学分野）",
+  "institution": "鹿児島大学 水産学部",
+  "prefecture": "鹿児島県",
+  "mapCity": "鹿児島市",
+  "latitude": 31.57,
+  "longitude": 130.55,
+  "scope": "core",
+  "leaders": "",
+  "themes": [
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "赤潮",
+   "海洋細菌",
+   "水圏環境"
+  ],
+  "description": "鹿児島湾などの沿岸水域で微生物・赤潮の発生機構や水圏環境保全を研究。",
+  "url": "https://www.fish.kagoshima-u.ac.jp/organization/aes/",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "hiroshima-marine-biotech",
+  "name": "海洋生物工学研究室",
+  "institution": "広島大学 大学院統合生命科学研究科",
+  "prefecture": "広島県",
+  "mapCity": "東広島市",
+  "latitude": 34.4,
+  "longitude": 132.71,
+  "scope": "core",
+  "leaders": "岡村 好子",
+  "themes": [
+   "応用・バイオ",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "メタゲノム解析",
+   "分子生物学"
+  ],
+  "tags": [
+   "マリンバイオテクノロジー",
+   "海洋メタゲノム",
+   "有用遺伝子",
+   "海底堆積物"
+  ],
+  "description": "海洋微生物を対象に、遺伝子分離技術の開発、メタゲノムからの有用遺伝子・有用物質探索とマテリアル応用を研究。",
+  "url": "https://okamuray.hiroshima-u.ac.jp/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "shizuoka-kodani",
+  "name": "応用微生物学研究室（小谷研究室）",
+  "institution": "静岡大学 農学部",
+  "prefecture": "静岡県",
+  "mapCity": "静岡市",
+  "latitude": 34.965,
+  "longitude": 138.433,
+  "scope": "related",
+  "leaders": "小谷 真也",
+  "themes": [
+   "応用・バイオ",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "分子生物学",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "生理活性物質",
+   "ペプチド",
+   "ゲノムマイニング",
+   "海洋細菌"
+  ],
+  "description": "微生物の生理活性ペプチドをゲノムマイニングで探索。海洋細菌の新規生理活性物質生産を研究対象の一部に含む。",
+  "url": "https://wwp.shizuoka.ac.jp/kodani/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "yokohama-cu-kanaly-mori",
+  "name": "環境微生物学研究室（Kanaly・守研究室）",
+  "institution": "横浜市立大学 大学院生命ナノシステム科学研究科・理学部",
+  "prefecture": "神奈川県",
+  "mapCity": "横浜市金沢区",
+  "latitude": 35.338,
+  "longitude": 139.623,
+  "scope": "related",
+  "leaders": "ロバート・カナリー・守 次朗",
+  "themes": [
+   "応用・バイオ",
+   "生態・物質循環",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌",
+   "真菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "メタゲノム解析",
+   "バイオインフォマティクス"
+  ],
+  "tags": [
+   "汚染物質分解",
+   "沿岸海水",
+   "海洋細菌",
+   "微生物間相互作用"
+  ],
+  "description": "汚染環境の微生物生態系と汚染物質分解を研究。都市沿岸海水由来の細菌によるPET等の分解や、海洋細菌（Thalassospira属など）の研究を含む。",
+  "url": "https://www-user.yokohama-cu.ac.jp/~envmicro/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "守 次朗｜横浜市立大学 研究者総覧",
+    "url": "https://researcher.yokohama-cu.ac.jp/html/100001135_ja.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "miyazaki-marine-micro",
+  "name": "海洋微生物学研究室",
+  "institution": "宮崎大学 農学部 海洋生物環境学科",
+  "prefecture": "宮崎県",
+  "mapCity": "宮崎市",
+  "latitude": 31.83,
+  "longitude": 131.41,
+  "scope": "core",
+  "leaders": "ウルバンチク ヘンリク",
+  "themes": [
+   "ゲノム・進化",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "Vibrio",
+   "海洋細菌",
+   "共生",
+   "進化"
+  ],
+  "description": "海洋性細菌の多様性と進化、特に海洋動物と関わるビブリオ科細菌（病原から共生まで）を研究。",
+  "url": "https://srhumdb.miyazaki-u.ac.jp/html/100000608_ja.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "学科 教員紹介",
+    "url": "https://www.miyazaki-u.ac.jp/fishery/staff/"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "miyazaki-marine-env-micro",
+  "name": "海洋環境微生物学研究室",
+  "institution": "宮崎大学 農学部 海洋生物環境学科",
+  "prefecture": "宮崎県",
+  "mapCity": "宮崎市",
+  "latitude": 31.83,
+  "longitude": 131.41,
+  "scope": "core",
+  "leaders": "田岡 洋介",
+  "themes": [
+   "生態・物質循環",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "海洋環境",
+   "プロバイオティクス",
+   "物質循環",
+   "水産増養殖"
+  ],
+  "description": "海洋環境の微生物生態と物質循環、分離微生物の有効利用や水産増養殖へのプロバイオティクス利用を研究。",
+  "url": "https://yousuketao.wixsite.com/mysite/home",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "宮崎大学 研究者DB",
+    "url": "https://srhumdb.miyazaki-u.ac.jp/html/100000775_ja.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "miyazaki-marine-bioscience",
+  "name": "マリンバイオサイエンス研究室",
+  "institution": "宮崎大学 農学部 海洋生物環境学科",
+  "prefecture": "宮崎県",
+  "mapCity": "宮崎市",
+  "latitude": 31.83,
+  "longitude": 131.41,
+  "scope": "core",
+  "leaders": "林 雅弘",
+  "themes": [
+   "応用・バイオ",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "真核微生物",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "ラビリンチュラ",
+   "DHA",
+   "アスタキサンチン",
+   "ユーグレナ"
+  ],
+  "description": "沖縄の海などからラビリンチュラ類など有用海洋微生物を探索し、微細藻類による化成品・燃料・飼料素材の開発を研究。",
+  "url": "https://srhumdb.miyazaki-u.ac.jp/html/644_ja.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "学科 教員紹介",
+    "url": "https://www.miyazaki-u.ac.jp/fishery/staff/"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tsukuba-inagaki",
+  "name": "稲垣研究室",
+  "institution": "筑波大学 計算科学研究センター",
+  "prefecture": "茨城県",
+  "mapCity": "つくば市",
+  "latitude": 36.11,
+  "longitude": 140.1,
+  "scope": "related",
+  "leaders": "稲垣 祐司",
+  "themes": [
+   "ゲノム・進化",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "真核微生物",
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "バイオインフォマティクス"
+  ],
+  "tags": [
+   "原生生物",
+   "オルガネラ進化",
+   "渦鞭毛藻",
+   "共生細菌"
+  ],
+  "description": "真核微生物のオルガネラ・ゲノム進化を分子系統とゲノム解析で研究。海洋原生生物に共生する細菌の多様性も対象。",
+  "url": "https://sites.google.com/site/yujiswebsite/Home",
+  "linkType": "個人HP",
+  "extraLinks": [
+   {
+    "label": "筑波大学 研究者総覧",
+    "url": "https://trios.tsukuba.ac.jp/researcher/1144"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kochi-ulanova",
+  "name": "微生物化学生態学研究室",
+  "institution": "高知大学 農林海洋科学部 海洋資源科学科",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "core",
+  "leaders": "ウラノバ ダナ",
+  "themes": [
+   "培養・生理",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "放線菌",
+   "微生物間相互作用",
+   "天然化合物",
+   "海洋堆積物"
+  ],
+  "description": "海洋堆積物・無脊椎動物・海藻から細菌を分離培養し、微生物間の化学的相互作用と天然化合物を研究。",
+  "url": "https://www.cc.kochi-u.ac.jp/~ulanova/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "researchmap",
+    "url": "https://researchmap.jp/ulanova"
+   },
+   {
+    "label": "学科 研究室紹介",
+    "url": "https://www.kochi-u.ac.jp/agrimar-ksm/laboratories.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kochi-sakurai",
+  "name": "ゲノム情報科学研究室",
+  "institution": "高知大学 農林海洋科学部 海洋資源科学科",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "related",
+  "leaders": "櫻井 哲也",
+  "themes": [
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "バイオインフォマティクス"
+  ],
+  "tags": [
+   "海洋細菌ゲノム",
+   "寄生虫",
+   "アオノリ"
+  ],
+  "description": "海の細菌のゲノム解析のほか、二生吸虫と宿主巻貝の関係、ヒトエグサ・アオノリの成長条件などを研究。",
+  "url": "https://www.cc.kochi-u.ac.jp/~tetsuya.sakurai/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "学科 研究室紹介",
+    "url": "https://www.kochi-u.ac.jp/agrimar-ksm/laboratories.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kochi-onodera",
+  "name": "天然物科学研究室",
+  "institution": "高知大学 農林海洋科学部 海洋資源科学科",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "related",
+  "leaders": "小野寺 健一",
+  "themes": [
+   "微細藻・原生生物",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "褐虫藻",
+   "天然物",
+   "サンゴ白化"
+  ],
+  "description": "褐虫藻（共生性微細藻類）の培養と天然物の探索・構造決定、アレルギー抑制効果やサンゴ白化との関わりを研究。",
+  "url": "https://www.cc.kochi-u.ac.jp/~onoderak/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "学科 研究室紹介",
+    "url": "https://www.kochi-u.ac.jp/agrimar-ksm/laboratories.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kochi-tsuda",
+  "name": "海洋コア津田研究室",
+  "institution": "高知大学 農林海洋科学部 海洋資源科学科",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "related",
+  "leaders": "津田 正史",
+  "themes": [
+   "微細藻・原生生物",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "分子生物学"
+  ],
+  "tags": [
+   "渦鞭毛藻",
+   "生物活性天然物",
+   "創薬"
+  ],
+  "description": "渦鞭毛藻が産生する生物活性天然物の探索・構造解析と医薬リード化合物の創製を研究。",
+  "url": "https://www.kochi-u.ac.jp/marine-core/member/tsuda/tsuda.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "学科 研究室紹介",
+    "url": "https://www.kochi-u.ac.jp/agrimar-ksm/laboratories.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "fra-hatsukaichi-diatom-virus",
+  "name": "外丸グループ",
+  "institution": "水産研究・教育機構 水産技術研究所（廿日市）",
+  "prefecture": "広島県",
+  "mapCity": "廿日市市",
+  "latitude": 34.33,
+  "longitude": 132.3,
+  "scope": "core",
+  "leaders": "外丸 裕司・羽野 健志・伴 広輝 ほか",
+  "themes": [
+   "ウイルス・宿主",
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "ウイルス",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "海洋観測"
+  ],
+  "tags": [
+   "珪藻ウイルス",
+   "海洋ウイルス",
+   "植物プランクトン",
+   "沿岸生態系"
+  ],
+  "description": "沿岸で大増殖する珪藻と、それに感染する海洋ウイルスの共存・繁栄の仕組みを培養実験と野外調査から研究。",
+  "url": "https://researchmap.jp/tomaru_yuji",
+  "linkType": "researchmap",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kochi-laques",
+  "name": "水族環境学研究室",
+  "institution": "高知大学 農林海洋科学部 海洋生物生産学コース",
+  "prefecture": "高知県",
+  "mapCity": "南国市",
+  "latitude": 33.57,
+  "longitude": 133.64,
+  "scope": "core",
+  "leaders": "足立 真佐雄・山口 晴生",
+  "themes": [
+   "微細藻・原生生物",
+   "ウイルス・宿主",
+   "応用・バイオ",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "ウイルス",
+   "真核微生物"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "海洋観測",
+   "ゲノム解析",
+   "分子生物学"
+  ],
+  "tags": [
+   "赤潮",
+   "貝毒",
+   "珪藻ウイルス",
+   "微細藻バイオ燃料"
+  ],
+  "description": "シャットネラなど有害赤潮の発生機構、貝毒・シガテラ原因微生物の特定、沿岸から分離した珪藻ウイルスと珪藻の生態的関係、海洋微細藻による燃料生産を研究。",
+  "url": "https://www.cc.kochi-u.ac.jp/~yharuo/laques/index.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tumsat-ishida",
+  "name": "海洋生化学研究室",
+  "institution": "東京海洋大学 海洋環境科学部門",
+  "prefecture": "東京都",
+  "mapCity": "東京都港区",
+  "latitude": 35.63,
+  "longitude": 139.75,
+  "scope": "core",
+  "leaders": "岡井 公彦",
+  "themes": [
+   "培養・生理",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "極限環境微生物",
+   "好圧菌・好冷菌",
+   "生分解性プラスチック",
+   "酵素"
+  ],
+  "description": "水圏の極限環境微生物と酵素の探索、環境適応の分子機構、海洋での生分解性プラスチックの微生物分解を研究。",
+  "url": "http://www2.kaiyodai.ac.jp/~mokai01/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tumsat-katano",
+  "name": "浮遊生物学研究室（片野研究室）",
+  "institution": "東京海洋大学 海洋環境科学部門",
+  "prefecture": "東京都",
+  "mapCity": "東京都港区",
+  "latitude": 35.63,
+  "longitude": 139.75,
+  "scope": "core",
+  "leaders": "片野 俊也",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "赤潮",
+   "Skeletonema",
+   "Synechococcus"
+  ],
+  "description": "東京湾などで植物プランクトン・ピコプランクトンの個体群動態、種間相互作用、赤潮の発達過程を研究。",
+  "url": "https://sites.google.com/view/tumsat-plankton/home",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "片野 俊也｜研究者総覧",
+    "url": "https://tumsatdb.kaiyodai.ac.jp/html/100000699_ja.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tumsat-makita",
+  "name": "牧田研究室",
+  "institution": "東京海洋大学 海洋環境科学部門",
+  "prefecture": "東京都",
+  "mapCity": "東京都港区",
+  "latitude": 35.63,
+  "longitude": 139.75,
+  "scope": "core",
+  "leaders": "牧田 寛子",
+  "themes": [
+   "培養・生理",
+   "生態・物質循環",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌",
+   "古細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "海洋観測"
+  ],
+  "tags": [
+   "深海熱水",
+   "鉄酸化微生物",
+   "極限環境",
+   "宇宙生物学"
+  ],
+  "description": "深海熱水域などの極限環境微生物、鉄酸化微生物の生理生態と、水処理・資源分野への応用を研究。",
+  "url": "https://tumsatdb.kaiyodai.ac.jp/html/100000783_ja.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "pu-toyama-microbial-engineering",
+  "name": "微生物工学講座（五十嵐研究室）",
+  "institution": "富山県立大学 工学部 生物工学科",
+  "prefecture": "富山県",
+  "mapCity": "射水市",
+  "latitude": 36.71,
+  "longitude": 137.1,
+  "scope": "related",
+  "leaders": "五十嵐 康弘・奥 直也・春成 円十朗",
+  "themes": [
+   "応用・バイオ",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "天然物化学",
+   "海洋放線菌",
+   "海洋深層水",
+   "創薬シーズ"
+  ],
+  "description": "海洋微生物や希少放線菌などから新しい生理活性物質を探索する天然物化学の研究室。",
+  "url": "http://www.pu-toyama.ac.jp/BR/hibari/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "学科 講座紹介",
+    "url": "https://bioeng.pu-toyama.ac.jp/course/"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "aori-icrc-fukuda",
+  "name": "福田研究室（大槌・地域連携研究部門）",
+  "institution": "東京大学 大気海洋研究所 国際・地域連携研究センター",
+  "prefecture": "岩手県",
+  "mapCity": "大槌町",
+  "latitude": 39.35,
+  "longitude": 141.94,
+  "scope": "core",
+  "leaders": "福田 秀樹",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "微生物群集解析",
+   "メタゲノム解析"
+  ],
+  "tags": [
+   "凝集体",
+   "生物炭素ポンプ",
+   "アマモ場",
+   "三陸沿岸"
+  ],
+  "description": "三陸沿岸を拠点に、海洋の凝集体の形成・沈降とそこに関わる微生物などの生物群集を研究。",
+  "url": "https://www.icrc.aori.u-tokyo.ac.jp/member.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "oist-husnik-ecbs-unit",
+  "name": "進化・細胞生物学・共生ユニット（Husnikユニット）",
+  "institution": "沖縄科学技術大学院大学（OIST）",
+  "prefecture": "沖縄県",
+  "mapCity": "恩納村",
+  "latitude": 26.46,
+  "longitude": 127.83,
+  "scope": "core",
+  "leaders": "Filip Husnik・將口 栄一",
+  "themes": [
+   "ゲノム・進化",
+   "微細藻・原生生物",
+   "ウイルス・宿主"
+  ],
+  "organisms": [
+   "真核微生物",
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "メタゲノム解析",
+   "分子生物学",
+   "バイオインフォマティクス"
+  ],
+  "tags": [
+   "原生生物共生",
+   "渦鞭毛藻",
+   "有孔虫",
+   "サンゴ礁"
+  ],
+  "description": "沖縄のサンゴ礁などで、海洋原生生物と細胞内共生体の起源と進化をゲノム・単一細胞解析で研究。",
+  "url": "https://groups.oist.jp/ecbsu",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "OIST ユニット紹介",
+    "url": "https://www.oist.jp/research/research-units/ecbsu"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "oist-marine-structural-biology-unit",
+  "name": "海洋構造生物学ユニット（Sitselユニット）",
+  "institution": "沖縄科学技術大学院大学（OIST）",
+  "prefecture": "沖縄県",
+  "mapCity": "恩納村",
+  "latitude": 26.46,
+  "longitude": 127.83,
+  "scope": "related",
+  "leaders": "Oleg Sitsel・和田 直久",
+  "themes": [
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "分子生物学",
+   "構造生物学"
+  ],
+  "tags": [
+   "サンゴ",
+   "褐虫藻",
+   "クライオ電顕",
+   "共生細菌"
+  ],
+  "description": "クライオ電顕とオミクスで、サンゴと褐虫藻・組織内細菌集合体の共生の仕組みを分子レベルで研究。",
+  "url": "https://groups.oist.jp/msbu",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "OIST ユニット紹介",
+    "url": "https://www.oist.jp/research/research-units/msbu"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "ryukyu-takahashi-lab-sesoko",
+  "name": "高橋研究室",
+  "institution": "琉球大学 熱帯生物圏研究センター 瀬底研究施設",
+  "prefecture": "沖縄県",
+  "mapCity": "本部町",
+  "latitude": 26.64,
+  "longitude": 127.87,
+  "scope": "related",
+  "leaders": "高橋 俊一",
+  "themes": [
+   "微細藻・原生生物",
+   "培養・生理",
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "褐虫藻",
+   "サンゴ白化",
+   "共生",
+   "高温耐性"
+  ],
+  "description": "サンゴと共生藻（褐虫藻）の共生・白化の仕組みを細胞レベルで研究し、共生藻の単離培養も行う。",
+  "url": "https://www.takahashi-lab-sesoko.com/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "ryukyu-suda-phycology",
+  "name": "須田研究室",
+  "institution": "琉球大学 理学部 海洋自然科学科",
+  "prefecture": "沖縄県",
+  "mapCity": "西原町",
+  "latitude": 26.25,
+  "longitude": 127.77,
+  "scope": "core",
+  "leaders": "須田 彰一郎",
+  "themes": [
+   "微細藻・原生生物",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "底生渦鞭毛藻",
+   "シアノバクテリア",
+   "微細藻分類",
+   "サンゴ礁"
+  ],
+  "description": "琉球のサンゴ礁に生息する底生渦鞭毛藻・シアノバクテリア・緑色微細藻の分類と系統を研究。",
+  "url": "https://kenkyushadb.lab.u-ryukyu.ac.jp/html/100000282_ja.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "ryukyu-ito-tbc-microbes",
+  "name": "伊藤研究室",
+  "institution": "琉球大学 熱帯生物圏研究センター",
+  "prefecture": "沖縄県",
+  "mapCity": "西原町",
+  "latitude": 26.25,
+  "longitude": 127.77,
+  "scope": "core",
+  "leaders": "伊藤 通浩",
+  "themes": [
+   "生態・物質循環",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "サンゴ共生細菌",
+   "モズク",
+   "海藻付着細菌",
+   "沖縄"
+  ],
+  "description": "サンゴや海藻に付く細菌を分離・解析し、沖縄の海洋環境保全や養殖への応用を研究。",
+  "url": "https://kenkyushadb.lab.u-ryukyu.ac.jp/html/100000573_ja.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "konan-honda-labyrinthulea",
+  "name": "本多研究室",
+  "institution": "甲南大学 理工学部 生物学科",
+  "prefecture": "兵庫県",
+  "mapCity": "神戸市",
+  "latitude": 34.73,
+  "longitude": 135.27,
+  "scope": "core",
+  "leaders": "本多 大輔",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "真核微生物"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "海洋観測",
+   "分子生物学",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "ラビリンチュラ",
+   "DHA",
+   "食物網",
+   "海洋原生生物"
+  ],
+  "description": "海洋原生生物ラビリンチュラ類の分類と、食物網やDHA供給での役割を研究。",
+  "url": "http://syst.bio.konan-u.ac.jp/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "甲南大学 研究者DB",
+    "url": "https://researchers.adm.konan-u.ac.jp/html/263_ja.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kwansei-matsuda-diatom",
+  "name": "松田研究室",
+  "institution": "関西学院大学 生命環境学部",
+  "prefecture": "兵庫県",
+  "mapCity": "三田市",
+  "latitude": 34.92,
+  "longitude": 135.21,
+  "scope": "related",
+  "leaders": "松田 祐介 ほか",
+  "themes": [
+   "培養・生理",
+   "微細藻・原生生物",
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "海洋珪藻",
+   "CO2濃縮機構",
+   "ピレノイド",
+   "一次生産"
+  ],
+  "description": "海洋珪藻のCO2濃縮機構とピレノイドを分子レベルで解析し、海洋一次生産の仕組みを研究。",
+  "url": "http://sci-tech.ksc.kwansei.ac.jp/~matsuda/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "osaka-u-shimakawa-diatom-photosynthesis",
+  "name": "植物生理学研究室（嶋川研究室）",
+  "institution": "大阪大学 大学院理学研究科",
+  "prefecture": "大阪府",
+  "mapCity": "豊中市",
+  "latitude": 34.81,
+  "longitude": 135.46,
+  "scope": "related",
+  "leaders": "嶋川 銀河 ほか",
+  "themes": [
+   "培養・生理",
+   "微細藻・原生生物",
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "海洋珪藻",
+   "ピレノイド",
+   "褐虫藻",
+   "光合成"
+  ],
+  "description": "珪藻の炭素同化とピレノイド、サンゴ内の褐虫藻の光合成など、光合成生物の環境適応を研究。",
+  "url": "https://sites.google.com/view/ginga-shimakawa/english-page",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kobe-u-rcis-onuma",
+  "name": "大沼研究室",
+  "institution": "神戸大学 内海域環境教育研究センター",
+  "prefecture": "兵庫県",
+  "mapCity": "神戸市",
+  "latitude": 34.73,
+  "longitude": 135.24,
+  "scope": "core",
+  "leaders": "大沼 亮",
+  "themes": [
+   "微細藻・原生生物",
+   "ゲノム・進化",
+   "培養・生理"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "渦鞭毛藻",
+   "盗葉緑体",
+   "細胞内共生",
+   "混合栄養"
+  ],
+  "description": "盗葉緑体をもつ渦鞭毛藻などを材料に、細胞内共生と混合栄養生物の進化を研究。",
+  "url": "https://onuma-endosymbiosis.com/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "fish-univ-yamasaki-hab",
+  "name": "山崎研究室",
+  "institution": "水産研究・教育機構 水産大学校",
+  "prefecture": "山口県",
+  "mapCity": "下関市",
+  "latitude": 34.05,
+  "longitude": 130.92,
+  "scope": "core",
+  "leaders": "山崎 康裕",
+  "themes": [
+   "微細藻・原生生物",
+   "培養・生理",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "赤潮",
+   "シャットネラ",
+   "ヘテロカプサ",
+   "魚類へい死"
+  ],
+  "description": "赤潮藻シャットネラやヘテロカプサが魚介類をへい死させる仕組みを培養実験で研究。",
+  "url": "https://researchmap.jp/Yasuhiro_Yamasaki",
+  "linkType": "researchmap",
+  "extraLinks": [
+   {
+    "label": "学科 教員一覧",
+    "url": "https://www.fish-u.ac.jp/seibutsu/seibutu_seisan_professor.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "okayama-ipsr-ueki-heterosigma",
+  "name": "植物環境微生物学グループ",
+  "institution": "岡山大学 資源植物科学研究所",
+  "prefecture": "岡山県",
+  "mapCity": "倉敷市",
+  "latitude": 34.59,
+  "longitude": 133.77,
+  "scope": "core",
+  "leaders": "植木 尚子・谷 明生",
+  "themes": [
+   "微細藻・原生生物",
+   "ウイルス・宿主",
+   "培養・生理"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌",
+   "ウイルス"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学",
+   "ゲノム解析"
+  ],
+  "tags": [
+   "赤潮",
+   "ヘテロシグマ",
+   "藻類-細菌相互作用",
+   "藻類ウイルス"
+  ],
+  "description": "赤潮藻ヘテロシグマと海洋細菌・ウイルスの相互作用や、赤潮形成時の増殖機構を研究。",
+  "url": "http://www.rib.okayama-u.ac.jp/inv/index-j.html",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "研究所 グループ紹介",
+    "url": "https://www.rib.okayama-u.ac.jp/research/pem-hp"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nagoya-isee-mino-phytoplankton",
+  "name": "三野研究室",
+  "institution": "名古屋大学 宇宙地球環境研究所",
+  "prefecture": "愛知県",
+  "mapCity": "名古屋市",
+  "latitude": 35.15,
+  "longitude": 136.97,
+  "scope": "core",
+  "leaders": "三野 義尚",
+  "themes": [
+   "生態・物質循環",
+   "培養・生理",
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "生物ポンプ",
+   "沈降粒子",
+   "炭素濃縮機構"
+  ],
+  "description": "植物プランクトンの光合成と沈降粒子の観測から、海洋の炭素・窒素循環を研究。",
+  "url": "https://profs.provost.nagoya-u.ac.jp/html/100003272_en.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "omu-tsubouchi-deepsea-actinomycetes",
+  "name": "坪内研究室",
+  "institution": "大阪公立大学 大学院医学研究科",
+  "prefecture": "大阪府",
+  "mapCity": "大阪市",
+  "latitude": 34.64,
+  "longitude": 135.51,
+  "scope": "related",
+  "leaders": "坪内 泰志",
+  "themes": [
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析"
+  ],
+  "tags": [
+   "深海放線菌",
+   "天然物",
+   "抗菌物質",
+   "創薬"
+  ],
+  "description": "深海由来の放線菌がつくる天然物から、薬剤耐性菌やがんに効く物質を探索。",
+  "url": "https://researchmap.jp/read0077004",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "okayama-kubota-dinoflagellate-natural-products",
+  "name": "天然物化学分野（久保田研究室）",
+  "institution": "岡山大学 学術研究院医歯薬学域",
+  "prefecture": "岡山県",
+  "mapCity": "岡山市",
+  "latitude": 34.69,
+  "longitude": 133.92,
+  "scope": "related",
+  "leaders": "久保田 高明・栗本 慎一郎",
+  "themes": [
+   "応用・バイオ",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "渦鞭毛藻",
+   "共生細菌",
+   "天然物化学",
+   "創薬リード"
+  ],
+  "description": "海洋生物と共生する渦鞭毛藻とその随伴細菌から、新しい生物活性天然物を探索。",
+  "url": "https://tenneniyakuhinkaihatsugakubunya.weebly.com",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "usp-hosoi-harmful-algae",
+  "name": "環境微生物学研究室（細井研究室）",
+  "institution": "滋賀県立大学 環境科学部",
+  "prefecture": "滋賀県",
+  "mapCity": "彦根市",
+  "latitude": 35.25,
+  "longitude": 136.21,
+  "scope": "related",
+  "leaders": "田辺（細井） 祥子",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真菌",
+   "細菌"
+  ],
+  "methods": [
+   "分子生物学",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "有害藻類",
+   "貝毒",
+   "バラスト水",
+   "分子モニタリング"
+  ],
+  "description": "有害赤潮藻や貝毒原因渦鞭毛藻の分子検出を研究し、近年は琵琶湖の微生物も扱う。",
+  "url": "http://des-usp.com/staff/laboratory-of-environmental-microbiology.php",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "ehime-cmes-obayashi",
+  "name": "大林研究室",
+  "institution": "愛媛大学 沿岸環境科学研究センター",
+  "prefecture": "愛媛県",
+  "mapCity": "松山市",
+  "latitude": 33.85,
+  "longitude": 132.77,
+  "scope": "core",
+  "leaders": "大林 由美子",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "従属栄養細菌",
+   "物質循環",
+   "大気海洋境界",
+   "微生物生態"
+  ],
+  "description": "海洋の従属栄養細菌と他生物との相互作用や、物質循環での役割を研究。",
+  "url": "https://researchers.office.ehime-u.ac.jp/html/100000238_ja.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "ehime-yoshie",
+  "name": "吉江研究室",
+  "institution": "愛媛大学 先端研究院",
+  "prefecture": "愛媛県",
+  "mapCity": "松山市",
+  "latitude": 33.85,
+  "longitude": 132.77,
+  "scope": "core",
+  "leaders": "吉江 直樹",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "赤潮",
+   "生態系モデル",
+   "瀬戸内海"
+  ],
+  "description": "植物プランクトンや赤潮の動態を、観測と海洋生態系モデルで解析。",
+  "url": "https://researchers.office.ehime-u.ac.jp/html/100000209_ja.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kagawa-yamaguchi-kazuiwa",
+  "name": "山口一岩研究室",
+  "institution": "香川大学 農学部",
+  "prefecture": "香川県",
+  "mapCity": "三木町",
+  "latitude": 34.27,
+  "longitude": 134.13,
+  "scope": "core",
+  "leaders": "山口 一岩",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "底生珪藻",
+   "栄養塩",
+   "志度湾"
+  ],
+  "description": "志度湾で光・栄養塩と植物プランクトン動態を高頻度観測し、底生珪藻のケイ素利用も研究。",
+  "url": "https://researchmap.jp/read0070811",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kagawa-ichimi",
+  "name": "一見研究室",
+  "institution": "香川大学 農学部 応用生物科学科",
+  "prefecture": "香川県",
+  "mapCity": "三木町",
+  "latitude": 34.27,
+  "longitude": 134.13,
+  "scope": "core",
+  "leaders": "一見 和彦",
+  "themes": [
+   "微細藻・原生生物",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "キートセロス",
+   "干潟",
+   "珪藻",
+   "屋外大量培養"
+  ],
+  "description": "干潟の小型珪藻キートセロスを中心に、生態・分類と増養殖餌料への応用を研究。",
+  "url": "https://www.kards.kagawa-u.ac.jp/profile/ja.2c5953682cec023bedc27b186c88b5bc.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "researchmap",
+    "url": "https://researchmap.jp/read0164884"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nagasaki-wada",
+  "name": "和田研究室",
+  "institution": "長崎大学 水産学部",
+  "prefecture": "長崎県",
+  "mapCity": "長崎市",
+  "latitude": 32.79,
+  "longitude": 129.87,
+  "scope": "core",
+  "leaders": "和田 実",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "海洋観測",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "貧酸素水塊",
+   "大村湾",
+   "化学合成細菌",
+   "赤潮細菌群集"
+  ],
+  "description": "大村湾の貧酸素化と微生物呼吸・化学合成細菌の関係など、水圏微生物の生態を研究。",
+  "url": "https://researchmap.jp/read0052736",
+  "linkType": "researchmap",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nagasaki-takasu",
+  "name": "生物地球化学研究室（高巣研究室）",
+  "institution": "長崎大学 環境科学部",
+  "prefecture": "長崎県",
+  "mapCity": "長崎市",
+  "latitude": 32.79,
+  "longitude": 129.87,
+  "scope": "core",
+  "leaders": "高巣 裕之",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "有明海",
+   "栄養塩",
+   "赤潮",
+   "貧酸素"
+  ],
+  "description": "有明海・諫早湾で、栄養塩循環とプランクトン・赤潮・貧酸素化の関係を研究。",
+  "url": "https://researchmap.jp/20190109",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nagasaki-suzuki-toshikazu",
+  "name": "浮游生物学研究室",
+  "institution": "長崎大学 水産学部",
+  "prefecture": "長崎県",
+  "mapCity": "長崎市",
+  "latitude": 32.79,
+  "longitude": 129.87,
+  "scope": "core",
+  "leaders": "鈴木 利一",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "プランクトン生態",
+   "微生物食物網",
+   "大村湾",
+   "赤潮"
+  ],
+  "description": "プランクトン生態と海洋微生物食物網を、大村湾の赤潮・貧酸素研究とあわせて研究。",
+  "url": "https://researchmap.jp/17301-suzuki",
+  "linkType": "researchmap",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nagasaki-takatani",
+  "name": "食品衛生学研究室",
+  "institution": "長崎大学 水産学部",
+  "prefecture": "長崎県",
+  "mapCity": "長崎市",
+  "latitude": 32.79,
+  "longitude": 129.87,
+  "scope": "core",
+  "leaders": "高谷 智裕",
+  "themes": [
+   "微細藻・原生生物",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "貝毒",
+   "微細藻毒",
+   "海洋毒",
+   "食品衛生"
+  ],
+  "description": "環境要因が微細藻類の毒産生に与える影響と、海洋毒の同定を研究。",
+  "url": "https://www.ist.nagasaki-u.ac.jp/en/faculty-members/masters-degree/mas-symbiotic/fisheries-resources",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nagasaki-inoue-tetsushi",
+  "name": "井上研究室",
+  "institution": "長崎大学 水産学部",
+  "prefecture": "長崎県",
+  "mapCity": "長崎市",
+  "latitude": 32.79,
+  "longitude": 129.87,
+  "scope": "related",
+  "leaders": "井上 徹志",
+  "themes": [
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "共生微生物",
+   "海洋生物",
+   "微生物学"
+  ],
+  "description": "海洋生物と微生物の共生関係を研究する微生物学の研究室。",
+  "url": "https://researchmap.jp/7000001967",
+  "linkType": "researchmap",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "saga-yoshida-kazuhiro",
+  "name": "吉田研究室",
+  "institution": "佐賀大学 農学部 生物資源科学科",
+  "prefecture": "佐賀県",
+  "mapCity": "佐賀市",
+  "latitude": 33.24,
+  "longitude": 130.29,
+  "scope": "core",
+  "leaders": "吉田 和広",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "分子生物学"
+  ],
+  "tags": [
+   "スケレトネマ",
+   "休眠期細胞",
+   "有明海",
+   "ノリ色落ち赤潮"
+  ],
+  "description": "有明海の珪藻赤潮を対象に、休眠期細胞の定量や発生予測に取り組む。",
+  "url": "https://research.dl.saga-u.ac.jp/profile/ja.ed1882ec7074c3c5.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "saga-kimura-kei",
+  "name": "木村研究室",
+  "institution": "佐賀大学 農学部 生物資源科学科",
+  "prefecture": "佐賀県",
+  "mapCity": "佐賀市",
+  "latitude": 33.24,
+  "longitude": 130.29,
+  "scope": "core",
+  "leaders": "木村 圭",
+  "themes": [
+   "微細藻・原生生物",
+   "ウイルス・宿主",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌",
+   "ウイルス"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "微生物群集解析",
+   "ゲノム解析"
+  ],
+  "tags": [
+   "ノリ色落ち",
+   "珪藻",
+   "細菌群集",
+   "ビタミンB12"
+  ],
+  "description": "ノリ色落ちの原因を、珪藻・細菌群集・ウイルスの関係から総合的に研究。",
+  "url": "https://research.dl.saga-u.ac.jp/profile/ja.66dc9d20979d5449.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "saga-ioes-demura",
+  "name": "出村研究室",
+  "institution": "佐賀大学 海洋エネルギー研究所",
+  "prefecture": "佐賀県",
+  "mapCity": "伊万里市",
+  "latitude": 33.28,
+  "longitude": 129.88,
+  "scope": "related",
+  "leaders": "出村 幹英",
+  "themes": [
+   "応用・バイオ",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "微細藻培養",
+   "海上浮体",
+   "バイオ資源"
+  ],
+  "description": "海上に浮かべて使う微細藻類の大量培養装置の開発に取り組む。",
+  "url": "https://researchmap.jp/demM",
+  "linkType": "researchmap",
+  "extraLinks": [
+   {
+    "label": "佐賀大学 研究者DB",
+    "url": "https://research.dl.saga-u.ac.jp/profile/ja.4f4464c1116be31d.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "puk-ichinomiya",
+  "name": "一宮研究室",
+  "institution": "熊本県立大学 環境共生学部",
+  "prefecture": "熊本県",
+  "mapCity": "熊本市",
+  "latitude": 32.81,
+  "longitude": 130.76,
+  "scope": "core",
+  "leaders": "一宮 睦雄",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "珪藻群体",
+   "黒潮",
+   "水俣湾",
+   "捕食被食"
+  ],
+  "description": "海洋植物プランクトンの生活史戦略と、プランクトン間の捕食・被食関係を研究。",
+  "url": "https://www.pu-kumamoto.ac.jp/researcher/ichinomiya-mutsuo/",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "puk-komorita",
+  "name": "海洋生態学研究室（小森田研究室）",
+  "institution": "熊本県立大学 環境共生学部",
+  "prefecture": "熊本県",
+  "mapCity": "熊本市",
+  "latitude": 32.81,
+  "longitude": 130.76,
+  "scope": "core",
+  "leaders": "小森田 智大",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "植物プランクトンブルーム",
+   "黒潮",
+   "海底地下水"
+  ],
+  "description": "黒潮域で植物プランクトンのブルームを支える栄養塩源を研究。",
+  "url": "https://sites.google.com/view/marecol",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "shokei-nonaka",
+  "name": "野中研究室",
+  "institution": "尚絅大学 生活科学部",
+  "prefecture": "熊本県",
+  "mapCity": "熊本市",
+  "latitude": 32.8,
+  "longitude": 130.71,
+  "scope": "core",
+  "leaders": "野中 里佐",
+  "themes": [
+   "ゲノム・進化",
+   "培養・生理"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "分子生物学",
+   "ゲノム解析",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "多剤耐性プラスミド",
+   "ビブリオ",
+   "養殖環境",
+   "水平伝播"
+  ],
+  "description": "養殖環境の海洋細菌がもつ多剤耐性プラスミドの伝達と維持の仕組みを研究。",
+  "url": "https://researchmap.jp/Lisa_Nonaka",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nimd-tada",
+  "name": "多田グループ",
+  "institution": "国立水俣病総合研究センター",
+  "prefecture": "熊本県",
+  "mapCity": "水俣市",
+  "latitude": 32.21,
+  "longitude": 130.4,
+  "scope": "core",
+  "leaders": "多田 雄哉",
+  "themes": [
+   "生態・物質循環",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌",
+   "古細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "メタゲノム解析",
+   "海洋観測",
+   "バイオインフォマティクス"
+  ],
+  "tags": [
+   "水銀メチル化",
+   "hgcA",
+   "Nitrospina",
+   "微細藻類"
+  ],
+  "description": "海洋の原核生物や微細藻類が、水銀のメチル化・脱メチル化に果たす役割を研究。",
+  "url": "https://nimd.env.go.jp/about/organization/member20.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "researchmap",
+    "url": "https://researchmap.jp/y_tada_nimd"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kyoto-ifuku-lab",
+  "name": "植物栄養学分野（伊福研究室）",
+  "institution": "京都大学 大学院農学研究科 応用生命科学専攻",
+  "prefecture": "京都府",
+  "mapCity": "京都市",
+  "latitude": 35.03,
+  "longitude": 135.78,
+  "scope": "related",
+  "leaders": "伊福 健太郎",
+  "themes": [
+   "光合成",
+   "微細藻・原生生物",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学",
+   "構造生物学"
+  ],
+  "tags": [
+   "海洋珪藻",
+   "集光アンテナ",
+   "NPQ",
+   "Chaetoceros"
+  ],
+  "description": "海洋珪藻の集光タンパク質と光防御（NPQ）の機能・進化を遺伝子改変で解析。",
+  "url": "https://kyotoplantnutrition.wixsite.com/website",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "京都大学 教員DB",
+    "url": "https://kdb.iimc.kyoto-u.ac.jp/profile/ja.61814daeee7f1316.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "saitama-nishiyama-lab",
+  "name": "西山研究室",
+  "institution": "埼玉大学 大学院理工学研究科",
+  "prefecture": "埼玉県",
+  "mapCity": "さいたま市",
+  "latitude": 35.86,
+  "longitude": 139.61,
+  "scope": "related",
+  "leaders": "西山 佳孝",
+  "themes": [
+   "光合成",
+   "微細藻・原生生物",
+   "培養・生理"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "光化学系II修復",
+   "赤潮藻",
+   "シャットネラ",
+   "酸化ストレス"
+  ],
+  "description": "シアノバクテリアや赤潮ラフィド藻シャットネラの光合成と、光阻害・修復の仕組みを研究。",
+  "url": "https://park.saitama-u.ac.jp/~kankyo/nishiyama/nishiyama_en.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "okayama-shen-lab",
+  "name": "沈研究室",
+  "institution": "岡山大学 異分野基礎科学研究所",
+  "prefecture": "岡山県",
+  "mapCity": "岡山市",
+  "latitude": 34.69,
+  "longitude": 133.92,
+  "scope": "related",
+  "leaders": "沈 建仁・加藤 公児",
+  "themes": [
+   "光合成",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "構造生物学"
+  ],
+  "tags": [
+   "光化学系構造",
+   "クライオ電顕",
+   "FCP",
+   "ハプト藻"
+  ],
+  "description": "クライオ電顕で珪藻・ハプト藻・渦鞭毛藻の光化学系と集光複合体の構造を解明。",
+  "url": "https://sites.google.com/view/jian-ren-shen/english-version",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "shizuoka-nagao-lab",
+  "name": "長尾研究室",
+  "institution": "静岡大学 農学部 応用生命科学科",
+  "prefecture": "静岡県",
+  "mapCity": "静岡市",
+  "latitude": 34.965,
+  "longitude": 138.433,
+  "scope": "related",
+  "leaders": "長尾 遼",
+  "themes": [
+   "光合成",
+   "微細藻・原生生物",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "構造生物学"
+  ],
+  "tags": [
+   "集光色素タンパク質",
+   "珪藻",
+   "海洋植物プランクトン",
+   "クライオ電顕"
+  ],
+  "description": "海洋植物プランクトンの集光機構と光合成の構造を解析し、藻類の物質生産へ応用。",
+  "url": "https://researchmap.jp/7000001179",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "osaka-kurisu-lab",
+  "name": "栗栖研究室",
+  "institution": "大阪大学 蛋白質研究所",
+  "prefecture": "大阪府",
+  "mapCity": "吹田市",
+  "latitude": 34.82,
+  "longitude": 135.52,
+  "scope": "related",
+  "leaders": "栗栖 源嗣",
+  "themes": [
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "構造生物学"
+  ],
+  "tags": [
+   "光合成ユビキティ",
+   "超分子構造",
+   "珪藻PSI",
+   "ピレノイド"
+  ],
+  "description": "光合成超分子複合体の構造を解析し、海洋珪藻の光化学系やピレノイドも対象とする。",
+  "url": "http://www.protein.osaka-u.ac.jp/crystallography/LabHP/HOME.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kobe-akimoto-lab",
+  "name": "秋本研究室",
+  "institution": "神戸大学 大学院理学研究科 化学専攻",
+  "prefecture": "兵庫県",
+  "mapCity": "神戸市",
+  "latitude": 34.73,
+  "longitude": 135.24,
+  "scope": "related",
+  "leaders": "秋本 誠志",
+  "themes": [
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "励起エネルギー移動",
+   "超高速分光",
+   "FCP",
+   "カロテノイド"
+  ],
+  "description": "超高速時間分解分光で、珪藻FCPなど藻類の集光系のエネルギー移動を解析。",
+  "url": "https://www2.kobe-u.ac.jp/~seiji/gk.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "omu-fujii-recap",
+  "name": "藤井研究室",
+  "institution": "大阪公立大学 人工光合成研究センター",
+  "prefecture": "大阪府",
+  "mapCity": "大阪市",
+  "latitude": 34.59,
+  "longitude": 135.51,
+  "scope": "related",
+  "leaders": "藤井 律子",
+  "themes": [
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "構造生物学",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "集光タンパク質",
+   "シフォナキサンチン",
+   "海産藻類",
+   "光防御"
+  ],
+  "description": "海産藻類の集光タンパク質の色素結合と構造を、クライオ電顕と分光で解析。",
+  "url": "https://researchmap.jp/Ritsuko_Mizoguchi",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "hokudai-iltl-takabayashi",
+  "name": "高林グループ",
+  "institution": "北海道大学 低温科学研究所",
+  "prefecture": "北海道",
+  "mapCity": "札幌市",
+  "latitude": 43.08,
+  "longitude": 141.34,
+  "scope": "related",
+  "leaders": "高林 厚史",
+  "themes": [
+   "光合成",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "分子生物学",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "プラシノ藻",
+   "光化学系",
+   "強光適応",
+   "海水から淡水"
+  ],
+  "description": "海産プラシノ藻の淡水進出に伴う、光化学系の強光適応の進化を研究。",
+  "url": "https://researchmap.jp/read0069963",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tut-hirose-lab",
+  "name": "ゲノム光生物学研究室（広瀬研究室）",
+  "institution": "豊橋技術科学大学 応用化学・生命工学系",
+  "prefecture": "愛知県",
+  "mapCity": "豊橋市",
+  "latitude": 34.7,
+  "longitude": 137.41,
+  "scope": "related",
+  "leaders": "広瀬 侑",
+  "themes": [
+   "光合成",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "分子生物学",
+   "構造生物学"
+  ],
+  "tags": [
+   "補色順化",
+   "光受容体",
+   "海洋性シアノ",
+   "光遺伝学"
+  ],
+  "description": "海洋性シアノバクテリアの新しい光受容体と、光の色に応じた集光系の調節を解析。",
+  "url": "https://sites.google.com/view/hirose-lab/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "toyaku-fujiwara-lab",
+  "name": "藤原研究室",
+  "institution": "東京薬科大学 生命科学部",
+  "prefecture": "東京都",
+  "mapCity": "八王子市",
+  "latitude": 35.62,
+  "longitude": 139.35,
+  "scope": "related",
+  "leaders": "藤原 祥子",
+  "themes": [
+   "微細藻・原生生物",
+   "応用・バイオ",
+   "光合成"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "ゲノム解析",
+   "分子生物学",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "円石藻",
+   "石灰化",
+   "CO2固定",
+   "貯蔵多糖"
+  ],
+  "description": "海洋性円石藻の石灰化とCO2固定・貯蔵多糖合成をゲノムから解明し、脱炭素へ応用。",
+  "url": "https://researchmap.jp/Shoko_Fujiwara",
+  "linkType": "researchmap",
+  "extraLinks": [],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "fpu-fujita-foraminifera",
+  "name": "Reef Foram Lab（藤田研究室）",
+  "institution": "福井県立大学 恐竜学部",
+  "prefecture": "福井県",
+  "mapCity": "勝山市",
+  "latitude": 36.06,
+  "longitude": 136.5,
+  "scope": "core",
+  "leaders": "藤田 和彦",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環",
+   "光合成"
+  ],
+  "organisms": [
+   "真核微生物",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "海洋観測"
+  ],
+  "tags": [
+   "大型有孔虫",
+   "共生藻",
+   "石灰化",
+   "海洋酸性化"
+  ],
+  "description": "サンゴ礁の大型有孔虫（共生藻をもつ原生生物）の光合成・石灰化や、温暖化・酸性化への耐性を研究。",
+  "url": "https://sites.google.com/site/reefforamslab/home",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "researchmap",
+    "url": "https://researchmap.jp/read0098081"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nagoya-goshima-sugashima",
+  "name": "五島研究室",
+  "institution": "名古屋大学 大学院理学研究科 附属臨海実験所",
+  "prefecture": "三重県",
+  "mapCity": "鳥羽市",
+  "latitude": 34.49,
+  "longitude": 136.88,
+  "scope": "related",
+  "leaders": "五島 剛太",
+  "themes": [
+   "培養・生理",
+   "ゲノム・進化",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "真菌",
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学",
+   "ゲノム解析"
+  ],
+  "tags": [
+   "海洋酵母",
+   "海生真菌",
+   "ハネモ（Bryopsis）",
+   "共生細菌"
+  ],
+  "description": "菅島周辺の海から分離した海洋酵母・海生真菌や、多核緑藻ハネモとその共生細菌を細胞生物学から研究。",
+  "url": "https://www.bio.nagoya-u.ac.jp/~goshimalab/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-aori-plankton",
+  "name": "浮遊生物グループ（海洋生態系科学部門）",
+  "institution": "東京大学 大気海洋研究所",
+  "prefecture": "千葉県",
+  "mapCity": "柏市",
+  "latitude": 35.87,
+  "longitude": 139.97,
+  "scope": "core",
+  "leaders": "西部 裕一郎・高木 悠花・平井 惇也 ほか",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "真核微生物",
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "分子生物学"
+  ],
+  "tags": [
+   "プランクトン",
+   "有孔虫",
+   "光共生",
+   "食物網"
+  ],
+  "description": "海洋プランクトンの多様性と進化、食物網や物質循環での役割を研究。浮遊性有孔虫と光共生も扱う。",
+  "url": "https://sites.google.com/g.ecc.u-tokyo.ac.jp/marine-ecosystem-science",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "浮遊生物グループHP",
+    "url": "http://www.ecosystem.aori.u-tokyo.ac.jp/plankton/"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-anesc-iwataki",
+  "name": "沿岸海洋環境学研究室（岩滝研究室）",
+  "institution": "東京大学 アジア生物資源環境研究センター／農学生命科学研究科 水圏生物科学専攻",
+  "prefecture": "東京都",
+  "mapCity": "東京都文京区",
+  "latitude": 35.72,
+  "longitude": 139.76,
+  "scope": "core",
+  "leaders": "岩滝 光儀",
+  "themes": [
+   "微細藻・原生生物",
+   "ゲノム・進化",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学",
+   "海洋観測"
+  ],
+  "tags": [
+   "有害赤潮",
+   "渦鞭毛藻",
+   "貝毒",
+   "東南アジア"
+  ],
+  "description": "有害な渦鞭毛藻やラフィド藻を形態と分子系統で分類し、アジア沿岸での分布を研究。",
+  "url": "https://www.anesc.u-tokyo.ac.jp/howto/divisions-and-staff/labo_iwataki",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "水圏生物科学専攻 研究室紹介",
+    "url": "https://www.fs.a.u-tokyo.ac.jp/researches/lab08.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-aori-saito-dinoflagellate",
+  "name": "齊藤研究室",
+  "institution": "東京大学 大気海洋研究所 国際・地域連携研究センター",
+  "prefecture": "千葉県",
+  "mapCity": "柏市",
+  "latitude": 35.87,
+  "longitude": 139.97,
+  "scope": "core",
+  "leaders": "齊藤 宏明",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "外洋渦鞭毛藻",
+   "食物網",
+   "インド洋",
+   "物質循環"
+  ],
+  "description": "外洋の渦鞭毛藻などのプランクトンが、食物網や物質循環で果たす役割を研究。",
+  "url": "https://www.u-tokyo.ac.jp/focus/ja/people/people100242.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-aori-molecular-marine-biology-symbiosis",
+  "name": "分子海洋生物学グループ",
+  "institution": "東京大学 大気海洋研究所 海洋生命科学部門",
+  "prefecture": "千葉県",
+  "mapCity": "柏市",
+  "latitude": 35.87,
+  "longitude": 139.97,
+  "scope": "related",
+  "leaders": "井上 広滋・新里 宙也・高木 俊幸",
+  "themes": [
+   "応用・バイオ",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "細菌",
+   "微細藻類"
+  ],
+  "methods": [
+   "分子生物学",
+   "微生物群集解析",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "サンゴ共生",
+   "褐虫藻",
+   "プロバイオティクス",
+   "サンゴ感染症"
+  ],
+  "description": "サンゴと褐虫藻・共生細菌の関係や、サンゴの感染症を分子レベルで研究。",
+  "url": "https://sites.google.com/view/marinebioscience-aori/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "AORI 教員一覧",
+    "url": "https://www.aori.u-tokyo.ac.jp/staff/index.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "tsukuba-ishida-lab",
+  "name": "石田研究室",
+  "institution": "筑波大学 生命環境系",
+  "prefecture": "茨城県",
+  "mapCity": "つくば市",
+  "latitude": 36.11,
+  "longitude": 140.1,
+  "scope": "core",
+  "leaders": "石田 健一郎",
+  "themes": [
+   "微細藻・原生生物",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析",
+   "分子生物学"
+  ],
+  "tags": [
+   "二次共生",
+   "クロララクニオン藻",
+   "ハプト藻",
+   "葉緑体進化"
+  ],
+  "description": "クロララクニオン藻など海産の藻類・原生生物を材料に、共生による葉緑体獲得と細胞進化を研究。",
+  "url": "https://www.biol.tsukuba.ac.jp/~ken/ishida-index.html",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "筑波大学 研究者総覧",
+    "url": "https://trios.tsukuba.ac.jp/researcher/1146"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "kyushu-agr-marine-env-science",
+  "name": "水産生物環境学研究室（島崎研究室）",
+  "institution": "九州大学 大学院農学研究院",
+  "prefecture": "福岡県",
+  "mapCity": "福岡市",
+  "latitude": 33.6,
+  "longitude": 130.23,
+  "scope": "core",
+  "leaders": "島崎 洋平",
+  "themes": [
+   "微細藻・原生生物",
+   "培養・生理",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "分子生物学"
+  ],
+  "tags": [
+   "有害赤潮",
+   "シャットネラ",
+   "魚毒性",
+   "プロテオーム"
+  ],
+  "description": "シャットネラなど有害赤潮藻の毒性の仕組みや増殖・衰退を、生理学とプロテオミクスで研究。",
+  "url": "http://www.agr.kyushu-u.ac.jp/lab/mes/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "九州大学 研究者情報",
+    "url": "https://hyoka.ofc.kyushu-u.ac.jp/html/100021953_ja.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "hiroshima-koike-symbiotic-algae",
+  "name": "小池研究室",
+  "institution": "広島大学 大学院統合生命科学研究科",
+  "prefecture": "広島県",
+  "mapCity": "東広島市",
+  "latitude": 34.4,
+  "longitude": 132.71,
+  "scope": "core",
+  "leaders": "小池 一彦",
+  "themes": [
+   "微細藻・原生生物",
+   "光合成",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "海洋観測",
+   "分子生物学"
+  ],
+  "tags": [
+   "褐虫藻",
+   "サンゴ礁",
+   "シャコガイ",
+   "有害藻"
+  ],
+  "description": "サンゴやシャコガイと褐虫藻の共生、有害藻や沿岸の基礎生産を研究。",
+  "url": "https://seeds.office.hiroshima-u.ac.jp/profile/ja.9fd0d34f0583c51b520e17560c007669.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "nies-microbial-culture-collection",
+  "name": "微生物系統保存施設（NIESコレクション）",
+  "institution": "国立環境研究所 生物多様性領域",
+  "prefecture": "茨城県",
+  "mapCity": "つくば市",
+  "latitude": 36.05,
+  "longitude": 140.12,
+  "scope": "related",
+  "leaders": "山口 晴代 ほか",
+  "themes": [
+   "微細藻・原生生物",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌",
+   "真核微生物"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析"
+  ],
+  "tags": [
+   "株保存",
+   "赤潮藻株",
+   "NBRP",
+   "有毒藻類"
+  ],
+  "description": "赤潮藻を含む微細藻類・シアノバクテリア・原生生物の株を保存・提供している。",
+  "url": "https://mcc.nbrp.jp/",
+  "linkType": "公式HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "riken-brc-jcm-kato",
+  "name": "微生物材料開発室（JCM）",
+  "institution": "理化学研究所 バイオリソース研究センター",
+  "prefecture": "茨城県",
+  "mapCity": "つくば市",
+  "latitude": 36.03,
+  "longitude": 140.11,
+  "scope": "related",
+  "leaders": "大熊 盛也・加藤 真悟 ほか",
+  "themes": [
+   "培養・生理",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌",
+   "古細菌"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "メタゲノム解析",
+   "ゲノム解析"
+  ],
+  "tags": [
+   "難培養微生物",
+   "鉄酸化細菌",
+   "深海熱水",
+   "微生物株"
+  ],
+  "description": "深海熱水や極限環境の難培養細菌・アーキアの分離培養とゲノム解析を進める。",
+  "url": "https://www.riken.jp/research/labs/brc/microb/index.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "researchmap（加藤 真悟）",
+    "url": "https://researchmap.jp/skato_jcm"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-sci-suzuki-yohey",
+  "name": "鈴木庸平研究室",
+  "institution": "東京大学 大学院理学系研究科 地球惑星科学専攻",
+  "prefecture": "東京都",
+  "mapCity": "東京都文京区",
+  "latitude": 35.71,
+  "longitude": 139.76,
+  "scope": "core",
+  "leaders": "鈴木 庸平",
+  "themes": [
+   "生態・物質循環",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌",
+   "古細菌"
+  ],
+  "methods": [
+   "メタゲノム解析",
+   "微生物群集解析"
+  ],
+  "tags": [
+   "海洋地殻",
+   "熱水チムニー",
+   "鉄マンガンクラスト",
+   "地下生命圏"
+  ],
+  "description": "海洋地殻や熱水チムニー、地下深部の岩石に暮らす微生物の生態を鉱物学と組み合わせて研究。",
+  "url": "https://researchmap.jp/suzukiyohey",
+  "linkType": "researchmap",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "utokyo-maruyama-photosymbiosis",
+  "name": "丸山研究室（Shin-Maruyama Lab）",
+  "institution": "東京大学 大学院新領域創成科学研究科 先端生命科学専攻",
+  "prefecture": "千葉県",
+  "mapCity": "柏市",
+  "latitude": 35.87,
+  "longitude": 139.97,
+  "scope": "related",
+  "leaders": "丸山 真一朗",
+  "themes": [
+   "共生",
+   "光合成",
+   "微細藻・原生生物",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析",
+   "分子生物学"
+  ],
+  "tags": [
+   "褐虫藻",
+   "サンゴ",
+   "白化",
+   "細胞内共生",
+   "葉緑体の起源"
+  ],
+  "description": "サンゴと褐虫藻などの光共生を、実験室での白化・再共生の再現と遺伝子発現・分泌分子の解析から研究し、葉緑体の起源にもせまる。",
+  "url": "https://purple149824.studio.site/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "丸山 真一朗 個人HP",
+    "url": "https://sites.google.com/site/shinichiromaruyamaweb/"
+   },
+   {
+    "label": "新領域 教員紹介",
+    "url": "https://www.k.u-tokyo.ac.jp/en/gsfs/faculty/shinichiro_maruyama/index.html"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "shimane-esrec-nakamura",
+  "name": "仲村研究室",
+  "institution": "島根大学 エスチュアリー研究センター 環境変動解析部門",
+  "prefecture": "島根県",
+  "mapCity": "松江市",
+  "latitude": 35.487,
+  "longitude": 133.066,
+  "scope": "core",
+  "leaders": "仲村 康秀",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測",
+   "分子生物学"
+  ],
+  "tags": [
+   "放散虫",
+   "動物プランクトン",
+   "炭素循環",
+   "DNAメタバーコーディング"
+  ],
+  "description": "放散虫など単細胞の動物プランクトンの分類・生態と、海洋の炭素循環での役割を研究。",
+  "url": "https://www.esrec.shimane-u.ac.jp/summary/staff/Nakamura.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "環境変動解析部門",
+    "url": "https://www.esrec.shimane-u.ac.jp/division/division1.html"
+   },
+   {
+    "label": "researchmap",
+    "url": "https://researchmap.jp/jasnakamura"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "aist-takahashi-marine-virus",
+  "name": "微生物システム創発研究チーム",
+  "institution": "産業技術総合研究所 バイオものづくり研究センター",
+  "prefecture": "茨城県",
+  "mapCity": "つくば市",
+  "latitude": 36.06,
+  "longitude": 140.13,
+  "scope": "core",
+  "leaders": "高橋 迪子",
+  "themes": [
+   "ウイルス・宿主",
+   "生態・物質循環",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "ウイルス",
+   "微細藻類"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析",
+   "分子生物学"
+  ],
+  "tags": [
+   "海洋ウイルス",
+   "未培養ウイルス",
+   "合成ゲノム",
+   "赤潮藻ウイルス"
+  ],
+  "description": "海洋の未培養ウイルスを分離・培養したり合成ゲノムから再生したりしてライブラリ化し、宿主との関係や炭素循環での役割を研究。",
+  "url": "https://bprc.aist.go.jp/msysr/member",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "fra-masuda-singlecell",
+  "name": "増田研究室",
+  "institution": "水産研究・教育機構 水産資源研究所 水産資源研究センター（塩釜）",
+  "prefecture": "宮城県",
+  "mapCity": "塩竈市",
+  "latitude": 38.312,
+  "longitude": 141.031,
+  "scope": "core",
+  "leaders": "増田 貴子",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "シングルセル解析",
+   "一次生産",
+   "窒素固定",
+   "Crocosphaera"
+  ],
+  "description": "植物プランクトンや窒素固定シアノバクテリアの炭素・窒素の取り込みを細胞1つずつ測り、海の生物生産を見直す研究。",
+  "url": "https://researchmap.jp/takakomasuda",
+  "linkType": "researchmap",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "jamstec-rigc",
+  "name": "地球環境研究部門（海洋生態系研究グループ）",
+  "institution": "JAMSTEC 横須賀本部",
+  "prefecture": "神奈川県",
+  "mapCity": "横須賀市",
+  "latitude": 35.32,
+  "longitude": 139.65,
+  "scope": "core",
+  "leaders": "木元 克典・藤木 徹一・池上 隆仁 ほか",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "浮遊性有孔虫",
+   "放散虫",
+   "生物ポンプ",
+   "海洋酸性化"
+  ],
+  "description": "北太平洋亜寒帯域や北極海での観測と飼育実験から、植物プランクトンの一次生産、浮遊性有孔虫・放散虫など原生生物の生態、生物ポンプや海洋酸性化の影響を研究。",
+  "url": "https://www.jamstec.go.jp/rigc/j/",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "mie-biopolymer-chem",
+  "name": "生体高分子化学研究室",
+  "institution": "三重大学 大学院生物資源学研究科 海洋生命分子化学講座",
+  "prefecture": "三重県",
+  "mapCity": "津市",
+  "latitude": 34.73,
+  "longitude": 136.51,
+  "scope": "related",
+  "leaders": "舩原 大輔・水谷 雪乃",
+  "themes": [
+   "共生",
+   "ウイルス・宿主",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌",
+   "ウイルス"
+  ],
+  "methods": [
+   "分子生物学",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "ノリ",
+   "共生細菌",
+   "内在性ウイルス",
+   "魚介類のタンパク質"
+  ],
+  "description": "魚介類の遺伝子・タンパク質の研究に加え、ノリ（アマノリ類）と共生細菌の関係や、ノリの内在性ウイルスの機能を研究。",
+  "url": "https://www.bio.mie-u.ac.jp/academics/master-15/dep03/course08/lab55/",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "keio-suenaga-natural-products",
+  "name": "天然物化学研究室",
+  "institution": "慶應義塾大学 理工学部 化学科",
+  "prefecture": "神奈川県",
+  "mapCity": "横浜市",
+  "latitude": 35.556,
+  "longitude": 139.654,
+  "scope": "related",
+  "leaders": "末永 聖武",
+  "themes": [
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "海洋シアノバクテリア",
+   "天然物化学",
+   "生物活性物質",
+   "沖縄"
+  ],
+  "description": "沖縄などの海で採集した海洋シアノバクテリアから新しい生物活性物質を探し、構造決定・合成・作用機序の解明を行う。",
+  "url": "https://chem.keio.ac.jp/suenaga/everweb/research.html",
+  "linkType": "研究室HP",
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "chuo-iwasaki-bioorganic",
+  "name": "生物有機化学研究室",
+  "institution": "中央大学 理工学部 応用化学科",
+  "prefecture": "東京都",
+  "mapCity": "東京都文京区",
+  "latitude": 35.7077,
+  "longitude": 139.7533,
+  "scope": "related",
+  "leaders": "岩﨑 有紘",
+  "themes": [
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "培養・生理実験"
+  ],
+  "tags": [
+   "海洋天然物",
+   "海洋シアノバクテリア",
+   "構造決定",
+   "創薬"
+  ],
+  "description": "南西諸島などの海洋生物（海洋シアノバクテリアを含む）から未知の天然物を探し、構造決定と生物活性の評価を行う。",
+  "url": "https://sites.google.com/g.chuo-u.ac.jp/bioorganic/",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "researchmap",
+    "url": "https://researchmap.jp/iwasaki"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "osaka-matsuo-taro",
+  "name": "生命惑星進化学グループ（松尾研究室）",
+  "institution": "大阪大学 大学院理学研究科 宇宙地球科学専攻",
+  "prefecture": "大阪府",
+  "mapCity": "豊中市",
+  "latitude": 34.807,
+  "longitude": 135.455,
+  "scope": "related",
+  "leaders": "松尾 太郎",
+  "themes": [
+   "光合成",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "細菌"
+  ],
+  "methods": [
+   "バイオインフォマティクス"
+  ],
+  "tags": [
+   "シアノバクテリア",
+   "光合成色素",
+   "集光アンテナ",
+   "海洋の光環境",
+   "バイオシグネチャー"
+  ],
+  "description": "太古の海の光環境とシアノバクテリアの光合成色素・集光アンテナの進化を研究し、系外惑星の生命探査（バイオシグネチャー）にもつなげる。",
+  "url": "https://lipes.ess.sci.osaka-u.ac.jp/index.html",
+  "linkType": "研究室HP",
+  "extraLinks": [
+   {
+    "label": "researchmap",
+    "url": "https://researchmap.jp/taromatsuo"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "jamstec-xstar",
+  "name": "生命地球科学研究部門",
+  "institution": "JAMSTEC 横須賀本部",
+  "prefecture": "神奈川県",
+  "mapCity": "横須賀市",
+  "latitude": 35.32,
+  "longitude": 139.65,
+  "scope": "core",
+  "leaders": "高井 研・井町 寛之・若井 暁・渋谷 岳造 ほか",
+  "themes": [
+   "生態・物質循環",
+   "ゲノム・進化",
+   "培養・生理",
+   "応用・バイオ"
+  ],
+  "organisms": [
+   "細菌",
+   "古細菌",
+   "真菌",
+   "ウイルス"
+  ],
+  "methods": [
+   "培養・生理実験",
+   "ゲノム解析",
+   "メタゲノム解析"
+  ],
+  "tags": [
+   "深海微生物",
+   "海底アーキア",
+   "嫌気培養",
+   "バイオリソース",
+   "ウイルスメタゲノム",
+   "生命の起源"
+  ],
+  "description": "海洋生命圏・海洋バイオリソース展開応用・海洋地球生命史の3プログラムで、深海の細菌・アーキアの培養とメタゲノム解析、深海微生物資源の活用、海と生命の共進化を研究。",
+  "url": "https://www.jamstec.go.jp/xstar/j/",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "深海バイオリソース提供事業",
+    "url": "https://www.jamstec.go.jp/xstar/bioresource/j/"
+   }
+  ],
+  "lastReview": "2026-10-29",
+  "checked": "2026-10-29"
+ }
+];

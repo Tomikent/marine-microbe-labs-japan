@@ -1,0 +1,32 @@
+name: update data
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/labs.json'
+      - 'tools/**'
+      - '.github/workflows/update_data.yml'
+  pull_request:
+    paths:
+      - 'data/labs.json'
+      - 'tools/**'
+permissions:
+  contents: write
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: check labs.json and rebuild labs.js / labs.csv
+        run: python ./tools/build_data.py
+      - name: commit files
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add data/labs.js data/labs.csv
+          git diff --cached --quiet || (git commit -m 'update labs.js / labs.csv (auto)' && git push origin main)

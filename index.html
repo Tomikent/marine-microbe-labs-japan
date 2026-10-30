@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日本国内の海洋微生物の研究室（関連分野含む）を、地図と一覧から探せるリンク集。">
+<meta name="theme-color" content="#0057b7">
+<title>Marine Microbiology Labs Japan｜地図</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+:root{
+  --sea:#b9dafb; --land:#f7f4ec;
+  --deep:#0057b7; --ink:#14233a; --muted:#4d6280; --line:#d3e1f0;
+  --core:#0a62c9; --related:#14a39a; --sel:#f29b2f;
+  font-family:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  color:var(--ink);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{display:flex;flex-direction:column;height:100dvh;overflow:hidden;background:#eef4fc}
+a{color:#0057b7}
+button,input{font:inherit}
+button{cursor:pointer}
+
+/* 1行ヘッダー */
+.bar{flex:0 0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 16px;background:var(--deep);color:#fff}
+.bar h1{margin:0;font-size:16px;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+.bar h1 small{font-weight:400;color:#b8d6ff;margin-left:8px;font-size:12px}
+.search{flex:1 1 220px;display:flex;align-items:center;height:34px;padding:0 10px;border-radius:9px;background:#fff}
+.search input{flex:1;border:0;outline:none;min-width:0;font-size:13px;color:var(--ink);background:transparent}
+.seg{display:flex;padding:2px;border-radius:9px;background:rgba(255,255,255,.14)}
+.seg button{border:0;background:transparent;color:#e6f0ff;padding:6px 10px;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.seg button.on{background:#fff;color:var(--deep)}
+.tabs{display:flex;padding:2px;border-radius:9px;background:rgba(255,255,255,.14)}
+.tabs button{border:0;background:transparent;color:#e6f0ff;padding:6px 14px;border-radius:7px;font-size:13px;font-weight:700;white-space:nowrap}
+.tabs button[aria-selected="true"]{background:#fff;color:var(--deep)}
+.postbtn{border:1px solid rgba(255,255,255,.5);background:transparent;color:#fff;border-radius:9px;padding:6px 12px;font-size:13px;font-weight:700;white-space:nowrap;cursor:pointer}
+@media (max-width:640px){.postbtn .lg{display:none}}
+.postbtn:hover{background:rgba(255,255,255,.14)}
+dialog#postdlg{border:0;border-radius:14px;padding:0;width:min(560px,calc(100vw - 32px));max-height:calc(100dvh - 32px);color:var(--ink);box-shadow:0 12px 40px rgba(0,0,0,.25)}
+dialog#postdlg::backdrop{background:rgba(10,40,55,.45)}
+#postform{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px}
+#postform .dh{display:flex;align-items:center;justify-content:space-between}
+#postform h2{margin:0;font-size:16px}
+#postform .x{border:0;background:none;font-size:22px;line-height:1;color:var(--muted);cursor:pointer}
+#postform .note{margin:0;font-size:12px;color:var(--muted)}
+#postform .radio{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px}
+#postform .f{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:700;color:var(--deep);border:0;padding:0;margin:0;min-width:0}
+#postform .f b{font-weight:400;font-size:10px;color:#b4572f;margin-left:6px}
+#postform .f input,#postform .f textarea{font:inherit;font-size:14px;font-weight:400;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 9px;background:#fff}
+#postform .f input:focus,#postform .f textarea:focus{outline:2px solid #9cc4f2;border-color:#9cc4f2}
+#postform fieldset.f{flex-direction:row;flex-wrap:wrap;gap:4px 14px}
+#postform fieldset.f legend{padding:0;margin-bottom:4px}
+#postform fieldset.f label{font-weight:400;font-size:13px;color:var(--ink)}
+#postform .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:520px){#postform .two{grid-template-columns:1fr}}
+#postform .dfoot{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+#postmsg{font-size:12px;color:var(--muted);margin-right:auto}
+#postmsg.ok{color:#2e8b4f}#postmsg.err{color:#b4572f}
+#postform .send{white-space:nowrap;flex:0 0 auto;border:0;background:var(--deep);color:#fff;border-radius:8px;padding:8px 22px;font-weight:700;font-size:14px;cursor:pointer}
+#postform .send:disabled{opacity:.5;cursor:default}
+#inbox{border-top:1px solid var(--line);padding-top:10px;font-size:12px}
+#inbox h3{margin:0 0 6px;font-size:13px}
+#inbox .s{border:1px solid var(--line);border-radius:8px;padding:6px 8px;margin-bottom:6px}
+#inbox .s small{color:var(--muted)}
+.ai{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:0;color:#7a4b00;background:#fff3d1;border:1px solid #f0d088;border-radius:999px;padding:1px 9px;margin-left:8px;white-space:nowrap;line-height:1.6;vertical-align:1px}
+.ai-row{display:none}
+.detail .fixes{display:flex;gap:16px;flex-wrap:wrap;margin-top:6px}
+.foot a{color:inherit}
+.detail .fix{border:0;background:none;color:var(--muted);font-size:13px;text-decoration:underline;padding:0;cursor:pointer;margin-top:4px}
+/* 一覧表示 */
+.listview{flex:1 1 auto;min-height:0;overflow:auto;background:#fff}
+.listview table{width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.6}
+.listview th{position:sticky;top:0;z-index:1;background:#e3edfb;color:#1a3a66;font-size:14px;font-weight:700;text-align:left;padding:9px 14px;border-bottom:2px solid #b7d0f1;white-space:nowrap;vertical-align:top}
+.listview td{padding:14px 16px;border-bottom:1px solid #e0e9f5;vertical-align:top}
+.listview tr.row:nth-child(even) td{background:#f5f8fe}
+.listview tr.row:hover td{background:#e5effc}
+.listview td.nm{width:25%;min-width:250px}
+.listview td.nm b{display:block;font-size:17px;font-weight:700;color:#0d2240;line-height:1.45}
+.listview td.nm .inst{display:block;color:#14233a;font-size:15px;font-weight:500;margin-top:5px;line-height:1.5}
+.listview td.nm .who{display:flex;align-items:baseline;gap:8px;color:#14233a;font-size:15px;font-weight:500;margin-top:4px;line-height:1.5}
+.listview td.nm .who i{flex:0 0 auto;font-style:normal;font-size:12px;font-weight:700;color:#fff;background:var(--core);border-radius:4px;padding:0 6px;line-height:1.75}
+.listview td.loc{white-space:nowrap;color:var(--ink);font-weight:500}
+.listview td.loc small{display:block;color:var(--muted);font-weight:400;font-size:13.5px}
+.listview td.ds{color:#14233a;font-size:16.5px;line-height:1.75;min-width:240px}
+.listview td.lk a{display:inline-block;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;color:var(--deep);border:1px solid #a8c8ef;border-radius:7px;padding:4px 9px;background:#fff}
+.listview td.lk a:hover{background:var(--deep);color:#fff;border-color:var(--deep)}
+.listview td.lk{white-space:nowrap}
+.listview .tomap{display:block;margin-top:8px;border:0;background:none;padding:2px 0;font-size:13.5px;color:var(--muted);text-decoration:underline;cursor:pointer}
+.listview .tomap:hover{color:var(--deep)}
+.listview .empty{padding:30px}
+.listview .pill{font-size:13px;padding:3px 10px}
+.listview th .kbtn,.phead .kbtn{font-size:12.5px;padding:3px 11px 3px 8px}
+
+/* 本体：地図＋パネルで画面を埋める（ページはスクロールしない） */
+.stage{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) min(460px,40vw)}
+.stage.has-lab{grid-template-columns:minmax(0,1fr) min(520px,45vw)}
+.mapbox{position:relative;min-height:0;background:var(--sea)}
+#map{position:absolute;inset:0;background:var(--sea)}
+.leaflet-container{font:inherit;background:var(--sea)}
+.count{position:absolute;z-index:500;left:12px;top:12px;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.9);font-size:12px;color:var(--muted);border:1px solid var(--line)}
+.count b{color:var(--ink);font-size:14px}
+.home{position:absolute;z-index:500;right:12px;top:12px;border:1px solid var(--line);background:#fff;color:var(--deep);border-radius:8px;padding:6px 10px;font-size:12px;font-weight:700}
+.legend{position:absolute;z-index:500;left:12px;bottom:12px;display:flex;gap:10px;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.9);font-size:11px;color:var(--muted);border:1px solid var(--line)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+.legend span{display:inline-flex;align-items:center;gap:3px}
+.legend .ic{margin-right:0}
+.leaflet-control-zoom a{color:var(--deep)!important}
+
+.pin{width:17px;height:17px;border-radius:50%;background:var(--core);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.35);transition:transform .15s}
+.ic svg{display:block}
+.pin.related{background:var(--related)}
+.pin.sel{background:var(--sel);transform:scale(1.5)}
+.pin.hot{transform:scale(1.6)}
+.leaflet-marker-icon:hover .pin{transform:scale(1.4)}
+.ic{display:inline-flex;gap:2px;vertical-align:-3px;margin-right:7px;color:var(--core)}
+.ic.related{color:var(--related)}
+.ic.t .k-bac{color:#c4572f}.ic.t .k-plk{color:#2e8b4f}.ic.t .k-vir{color:#7a4fc0}
+.kinds{display:flex;flex-wrap:wrap;gap:5px 6px;margin-top:5px;font-size:11px;color:var(--muted)}
+.kbtn{display:inline-flex;align-items:center;border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:2px 9px 2px 6px;font:inherit;font-size:11px;cursor:pointer}
+.kbtn:hover{border-color:#9cc4f2}
+.kbtn.on{background:#e2edfb;border-color:var(--deep);color:var(--deep);font-weight:700}
+.kinds:has(.kbtn.on) .kbtn:not(.on):not(.clr){opacity:.55}
+.kbtn.clr{padding:2px 9px;border-style:dashed}
+.kinds .ic{margin-right:4px}
+th .kinds{display:flex;margin:6px 0 0;font-weight:400;max-width:460px}
+.ic .k{display:inline-flex}
+.leaflet-tooltip.tip{background:#0d2240;color:#fff;border:0;border-radius:6px;padding:5px 8px;font-size:12px;box-shadow:none}
+.leaflet-tooltip.tip::before{display:none}
+
+/* パネル */
+.panel{display:flex;flex-direction:column;min-height:0;background:#fff;border-left:1px solid var(--line)}
+.phead{flex:0 0 auto;padding:12px 14px 8px;border-bottom:1px solid var(--line)}
+.phead .back{border:0;background:#e6effb;color:var(--deep);border-radius:999px;padding:3px 10px;font-size:11px;font-weight:700;margin-bottom:6px}
+.phead h2{margin:0;font-size:18px;line-height:1.4}
+.phead p{margin:3px 0 0;font-size:14px;color:var(--muted)}
+.phead .dname{font-size:21px;line-height:1.4;color:#0d2240;margin-top:2px}
+.phead .dinst{font-size:15.5px;color:#14233a;font-weight:500;margin-top:4px;line-height:1.5}
+.phead .dmeta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:10px 0 4px;font-size:14px;color:#14233a}
+.phead .dmeta .pill{font-size:12.5px;padding:3px 10px}
+.phead .dkinds{display:inline-flex;align-items:center;flex-wrap:wrap}
+.phead .dkinds .ic{margin-right:3px}
+.phead .dkinds i{display:inline-block;width:10px}
+.plist{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.item{text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:11px 14px}
+.item:hover,.item:focus-visible{border-color:#93bdf0;outline:none;background:#f6f9fe}
+.item strong{display:block;font-size:16.5px;line-height:1.45;color:#0d2240}
+.item small{display:block;font-size:14px;color:#2a3f5c;font-weight:500;margin-top:4px;line-height:1.5}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--core);margin-right:6px;vertical-align:1px}
+.dot.related{background:var(--related)}
+.detail{display:flex;flex-direction:column;gap:4px;font-size:15px;padding:4px 6px 10px}
+.sec{padding:10px 0;border-bottom:1px solid #e3ebf6}
+.sec h3{margin:0 0 9px;font-size:13.5px;font-weight:700;color:var(--deep);letter-spacing:.04em;display:flex;align-items:center;gap:6px}
+.sec h3::before{content:"";width:3px;height:13px;border-radius:2px;background:var(--core)}
+.sec .tags{margin-top:8px}
+.detail .inst{font-weight:700;color:#2a3f5c}
+.detail p{margin:0;line-height:1.8;color:#14233a;font-size:15px}
+.kv{display:grid;grid-template-columns:64px 1fr;gap:8px 12px;font-size:14.5px;color:var(--ink);margin:0}
+.kv dt{color:var(--muted);font-weight:700;font-size:13px;padding-top:2px}.kv dd{margin:0;line-height:1.5}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:13px;color:#134f99;background:#edf4fd;border:1px solid #d3e3f8;padding:3px 10px;border-radius:999px}
+.links a{display:block;padding:11px 14px;border-radius:9px;text-decoration:none;font-weight:700;font-size:15px;background:#eff5fd;border:1px solid var(--line);margin-bottom:5px}
+.links a.primary{background:var(--deep);color:#fff;border-color:var(--deep)}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.pill.core{background:#e2edfb;color:#0050a8}.pill.related{background:#dcf4f1;color:#0b7a72}
+.sub{font-size:11px;font-weight:700;color:#2a74c9;margin-top:6px}
+.empty{padding:20px;text-align:center;color:var(--muted);font-size:13px}
+.foot{flex:0 0 auto;padding:6px 14px;border-top:1px solid var(--line);font-size:10.5px;color:#64789a}
+:focus-visible{outline:2px solid var(--sel);outline-offset:2px}
+
+@media (max-width:820px){
+  .listview table,.listview thead,.listview tbody,.listview tr,.listview td{display:block;width:auto}
+  .listview thead th{display:none}
+  .listview thead th:first-child{display:block;padding:9px 14px}
+  .listview tr.row{padding:12px 14px;border-bottom:1px solid #e0e9f5}
+  .listview tr.row:nth-child(even){background:#f5f8fe}
+  .listview tr.row:hover{background:#e5effc}
+  .listview td{padding:0;border:0;background:transparent!important}
+  .listview td.nm{width:auto}
+  .listview td.loc,.listview td.sc{display:inline-block;vertical-align:middle;margin:8px 8px 0 0;font-size:14.5px}
+  .listview td.loc small{display:inline;margin-left:4px}
+  .listview td.ds{min-width:0;margin-top:8px;font-size:15.5px}
+  .listview .ai-row{display:inline-block;margin:0 8px 0 0}
+  .listview td.lk{margin-top:8px}
+  .listview .tomap{display:inline-block;margin:0 0 0 12px}
+  .bar{padding:8px 10px;gap:8px}
+  .bar h1 small{display:none}
+  .search{order:5;flex-basis:100%}
+  .stage{grid-template-columns:1fr;grid-template-rows:minmax(0,55%) minmax(0,45%)}
+  .stage.has-lab{grid-template-columns:1fr;grid-template-rows:minmax(0,34%) minmax(0,66%)}
+  .panel{border-left:0;border-top:1px solid var(--line)}
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <h1>Marine Microbiology Labs Japan<small>日本の海洋微生物ラボ</small></h1>
+  <label class="search"><input id="q" type="search" placeholder="研究室・大学・研究者・キーワード" aria-label="検索" autocomplete="off"></label>
+  <div class="seg" role="group" aria-label="掲載区分">
+    <button type="button" data-scope="all" class="on">すべて</button>
+    <button type="button" data-scope="core">主分野</button>
+    <button type="button" data-scope="related">関連分野</button>
+  </div>
+  <div class="tabs" role="tablist" aria-label="表示の切り替え">
+    <button type="button" role="tab" data-view="map" aria-selected="true">地図</button>
+    <button type="button" role="tab" data-view="list" aria-selected="false">一覧</button>
+  </div>
+  <button type="button" class="postbtn" id="postbtn">＋ <span class="lg">研究室を</span>投稿</button>
+</header>
+<dialog id="postdlg" aria-labelledby="posttitle">
+  <form id="postform" method="dialog" novalidate>
+    <div class="dh"><h2 id="posttitle">研究室の追加・修正を送る</h2><button type="button" class="x" id="postclose" aria-label="閉じる">×</button></div>
+    <p class="note">送られた内容は作成者が確認してから掲載します。分かる範囲で大丈夫です。</p>
+    <div class="radio" role="radiogroup" aria-label="種類">
+      <label><input type="radio" name="kind" value="追加" checked> 新しい研究室を追加</label>
+      <label><input type="radio" name="kind" value="修正"> 掲載中の情報を修正</label>
+      <label><input type="radio" name="kind" value="取り下げ"> 掲載の取り下げ</label>
+    </div>
+    <label class="f"><span>研究室名<b>必須</b></span><input name="name" required maxlength="200" placeholder="例：海洋微生物学研究室"></label>
+    <label class="f"><span>大学・機関<b>必須</b></span><input name="institution" required maxlength="200" placeholder="例：〇〇大学 〇〇学部"></label>
+    <label class="f">研究室HPのURL<input name="url" type="url" maxlength="500" placeholder="https://"></label>
+    <div class="two">
+      <label class="f">研究者名<input name="leaders" maxlength="200"></label>
+      <label class="f">所在地（都道府県・市）<input name="place" maxlength="100" placeholder="例：千葉県 柏市"></label>
+    </div>
+    <fieldset class="f"><legend>対象</legend>
+      <label><input type="checkbox" name="org" value="細菌・古細菌"> 細菌・古細菌</label>
+      <label><input type="checkbox" name="org" value="プランクトン"> プランクトン（微細藻類・原生生物）</label>
+      <label><input type="checkbox" name="org" value="ウイルス"> ウイルス</label>
+    </fieldset>
+    <label class="f">研究内容・修正したい点<textarea name="body" rows="3" maxlength="2000"></textarea></label>
+    <div class="dfoot"><span id="postmsg" role="status"></span><button type="submit" class="send" id="postsend">送信</button></div>
+    <div id="inbox" hidden></div>
+  </form>
+</dialog>
+
+<main class="stage">
+  <div class="mapbox">
+    <div id="map" aria-label="日本地図と研究室の位置"></div>
+    <div class="count"><b id="n">–</b> 研究室</div>
+    <button class="home" id="home" type="button">全体表示</button>
+    <div class="legend" aria-hidden="true" id="legend"></div>
+  </div>
+  <aside class="panel" aria-live="polite">
+    <div class="phead" id="phead"></div>
+    <div class="plist" id="plist"></div>
+    <div class="foot">※個人が作成した非公式のリンク集です。研究内容の説明文はAIが公開情報をもとに作成したもので、誤りを含む場合があります。最終更新 <span data-updated></span>・位置はキャンパスの代表点（概略）・<a href="#" id="rmlink">掲載の取り下げ</a><br>地図ライブラリ：<a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>・陸地の形：地球地図日本（国土地理院）を加工</div>
+  </aside>
+</main>
+
+<section class="listview" id="listview" hidden aria-label="研究室の一覧">
+  <table>
+    <thead><tr><th>研究室・機関<span id="thkey"></span></th><th>所在地</th><th>区分</th><th class="ds">研究内容<small class="ai">AIによる要約</small></th><th>リンク</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <div class="empty" id="lempty" hidden>条件に合う研究室はありません。</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data/labs.js"></script>
+<script src="data/japan_land.js"></script>
+<script>
+const labs = window.LABS || [];
+(() => {
+  'use strict';
+  document.querySelectorAll('[data-updated]').forEach(e => e.textContent = window.LABS_UPDATED || '');
+  const $ = id => document.getElementById(id);
+  const esc = x => String(x ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const ALLOWED_HTTP = new Set(['http://ecosystem.aori.u-tokyo.ac.jp/microbiology-wp/','http://www2.kaiyodai.ac.jp/~mokai01/']);
+  const safeUrl = u => /^https?:\/\/[A-Za-z0-9.-]+(?:[\/?#:]|$)/.test(u||'') ? u : '#';
+  const siteKey = l => `${l.latitude.toFixed(3)},${l.longitude.toFixed(3)}`;
+  const norm = s => String(s||'').toLowerCase().normalize('NFKC');
+  // アイコン：細菌（桿菌）・プランクトン（珪藻／放散虫風）・ウイルス（ファージ）。色は区分（主分野／関連分野）
+  const SHAPES = {
+    bac: '<rect x="2" y="4.6" width="10" height="4.8" rx="2.4" transform="rotate(-35 7 7)" fill="currentColor" stroke="#fff" stroke-width="1.3"/>',
+    plk: '<g stroke-linecap="round"><g stroke="#fff" stroke-width="2.6"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1.8" y1="4" x2="12.2" y2="10"/><line x1="1.8" y1="10" x2="12.2" y2="4"/></g><g stroke="currentColor" stroke-width="1.2"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1.8" y1="4" x2="12.2" y2="10"/><line x1="1.8" y1="10" x2="12.2" y2="4"/></g></g><circle cx="7" cy="7" r="3.9" fill="currentColor" stroke="#fff" stroke-width="1.2"/>',
+    vir: '<g stroke-linecap="round" fill="none"><path d="M7 7.6V11.2M7 11.2L4.6 12.9M7 11.2L9.4 12.9" stroke="#fff" stroke-width="2.6"/><path d="M7 7.6V11.2M7 11.2L4.6 12.9M7 11.2L9.4 12.9" stroke="currentColor" stroke-width="1.2"/></g><polygon points="7,0.9 10.2,2.8 10.2,6.4 7,8.3 3.8,6.4 3.8,2.8" fill="currentColor" stroke="#fff" stroke-width="1.2"/>'
+  };
+  const KIND_LABEL = {bac:'細菌・古細菌', plk:'プランクトン（微細藻類・原生生物）', vir:'ウイルス'};
+  function kinds(l){
+    const o = l.organisms || [], k = [];
+    if(o.some(x=>x==='細菌'||x==='古細菌'||x==='真菌')) k.push('bac');
+    if(o.some(x=>x==='微細藻類'||x==='真核微生物')) k.push('plk');
+    if(o.includes('ウイルス')) k.push('vir');
+    return k.length ? k : ['bac'];
+  }
+  const svg = (k, px) => `<svg width="${px}" height="${px}" viewBox="0 0 14 14" aria-hidden="true">${SHAPES[k]}</svg>`;
+  const icons = (l, px) => kinds(l).map(k=>svg(k,px)).join('');
+  const keyHtml = () => '<div class="kinds" role="group" aria-label="対象で絞り込み">'+['bac','plk','vir'].map(k=>`<button type="button" class="kbtn${state.kind===k?' on':''}" data-kind="${k}" aria-pressed="${state.kind===k}" title="${KIND_LABEL[k]}で絞り込み"><span class="ic t"><span class="k k-${k}">${svg(k,13)}</span></span>${KIND_LABEL[k].replace(/（.*）/,'')}</button>`).join('')+(state.kind?'<button type="button" class="kbtn clr" data-kind="">解除</button>':'')+'</div>';
+  const ticons = (l, px) => kinds(l).map(k=>`<span class="k k-${k}" title="${KIND_LABEL[k]}">${svg(k,px)}</span>`).join('');
+  labs.forEach(l => { l._hay = norm([l.name,l.institution,l.leaders,l.prefecture,l.mapCity,l.description,...(l.tags||[]),...(l.themes||[]),...(l.organisms||[]),...(l.methods||[])].join(' ')); });
+
+  const state = { scope:'all', q:'', lab:null, kind:null };
+  let current = labs;
+  const filtered = () => {
+    const terms = norm(state.q).split(/\s+/).filter(Boolean);
+    return labs.filter(l => (state.scope==='all'||l.scope===state.scope) && (!state.kind || kinds(l).includes(state.kind)) && terms.every(t=>l._hay.includes(t)));
+  };
+
+  /* ---- 地図：タイルなし。陸地は単色の図形、海は背景色 ---- */
+  const JAPAN = typeof L !== 'undefined' ? L.latLngBounds([[25.9,127.3],[45.6,146.0]]) : null;
+  let map = null, markerLayer = null;
+  const markers = new Map();
+
+  function initMap(){
+    map = L.map('map', {
+      zoomControl:true, attributionControl:false, preferCanvas:true,
+      scrollWheelZoom:true, wheelPxPerZoomLevel:120, wheelDebounceTime:30,
+      doubleClickZoom:true, boxZoom:false, keyboard:true,
+      zoomSnap:0.25, zoomDelta:0.5, minZoom:4, maxZoom:11,
+      inertia:true, maxBounds:JAPAN.pad(0.3), maxBoundsViscosity:0.8
+    });
+    map.zoomControl.setPosition('bottomright');
+    fitAll(false);
+    addEventListener('resize', () => { if(!state.lab) fitAll(false); });
+    markerLayer = L.layerGroup().addTo(map);
+    renderMarkers();
+    loadLand();
+  }
+  function fitAll(animate=true){ if(map) map.fitBounds(JAPAN, {padding:[10,10], animate}); }
+
+  // 陸地の形：data/japan_land.js（地球地図日本を簡略化）を優先し、無ければCDNから読む
+  async function loadLand(){
+    const style = {fillColor:'#f7f4ec', fillOpacity:1, color:'#e4e0d3', weight:0.5};
+    if(window.JAPAN_LAND){ L.geoJSON(window.JAPAN_LAND, {interactive:false, style}).addTo(map).bringToBack(); return; }
+    try{
+      const r = await fetch('https://cdn.jsdelivr.net/gh/dataofjapan/land@master/japan.geojson');
+      if(r.ok) L.geoJSON(await r.json(), {interactive:false, smoothFactor:2, style}).addTo(map).bringToBack();
+    }catch(e){}
+  }
+
+  function renderMarkers(){
+    if(!markerLayer) return;
+    markerLayer.clearLayers(); markers.clear();
+    const bySite = new Map();
+    for(const l of current){ const k=siteKey(l); if(!bySite.has(k)) bySite.set(k,[]); bySite.get(k).push(l); }
+    for(const g of bySite.values()){
+      // 同じキャンパスの研究室は座標を変えず、画面上で数pxずつ並べて重なりを避ける
+      const n = g.length, R = n>1 ? 11 + n*3 : 0;
+      g.forEach((l,i) => {
+        const a = -Math.PI/2 + i*2*Math.PI/n, dx = Math.round(R*Math.cos(a)), dy = Math.round(R*Math.sin(a)), s = 17;
+        const m = L.marker([l.latitude,l.longitude], {
+          icon:L.divIcon({className:'', html:`<div class="pin${l.scope==='core'?'':' related'}${state.lab===l.id?' sel':''}"></div>`, iconSize:[s,s], iconAnchor:[s/2-dx, s/2-dy]}),
+          title:l.name, riseOnHover:true, zIndexOffset: state.lab===l.id?1000:0
+        });
+        m.bindTooltip(`<b>${esc(l.name)}</b><br>${esc(l.institution)}`, {className:'tip', direction:'top', offset:[dx, dy-8]});
+        m.on('click', () => select(l.id));
+        m.addTo(markerLayer); markers.set(l.id, m);
+      });
+    }
+  }
+  function refreshPins(){
+    for(const [id,m] of markers){
+      const el = m.getElement()?.querySelector('.pin'); if(!el) continue;
+      el.classList.toggle('sel', state.lab===id); m.setZIndexOffset(state.lab===id?1000:0);
+    }
+  }
+  const hot = (id,on) => markers.get(id)?.getElement()?.querySelector('.pin')?.classList.toggle('hot', on);
+
+  /* ---- パネル ---- */
+  function item(l){
+    const b = document.createElement('button'); b.type='button'; b.className='item';
+    b.innerHTML = `<strong><span class="ic t ${l.scope==='core'?'':'related'}">${ticons(l,15)}</span>${esc(l.name)}</strong><small>${esc(l.prefecture)} ${esc(l.mapCity)} / ${esc(l.institution)}</small>`;
+    b.onmouseenter = () => hot(l.id,true); b.onmouseleave = () => hot(l.id,false);
+    b.onclick = () => { hot(l.id,false); select(l.id); };
+    return b;
+  }
+  function renderPanel(){
+    const head = $('phead'), list = $('plist');
+    list.replaceChildren(); list.scrollTop = 0;
+    if(state.lab){
+      const l = labs.find(x=>x.id===state.lab);
+      head.innerHTML = `<button class="back" type="button" id="back">← 一覧に戻る</button>
+        <h2 class="dname">${esc(l.name)}</h2>
+        <div class="dinst">${esc(l.institution)}</div>
+        <div class="dmeta"><span class="pill ${l.scope}">${l.scope==='core'?'主分野':'関連分野'}</span><span class="dkinds">${kinds(l).map(k=>`<span class="ic t"><span class="k k-${k}">${svg(k,14)}</span></span>${KIND_LABEL[k].replace(/（.*）/,'')}`).join('<i></i>')}</span></div>`;
+      $('back').onclick = () => { select(null); fitAll(); };
+      const extra = (l.extraLinks||[]).map(x=>`<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">${esc(x.label)} ↗</a>`).join('');
+      const d = document.createElement('div'); d.className='detail';
+      d.innerHTML = `
+        <section class="sec"><h3>リンク</h3>
+          <div class="links"><a class="primary" href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener noreferrer">${esc(l.linkType||'公式ページ')} ↗</a>${extra}</div></section>
+        <section class="sec"><h3>研究内容<small class="ai">AIによる要約</small></h3>
+          <p>${esc(l.description)}</p>
+          <div class="tags">${(l.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></section>
+        <section class="sec"><h3>基本情報</h3>
+        <dl class="kv">
+          ${l.leaders?`<dt>研究者</dt><dd>${esc(l.leaders)}</dd>`:''}
+          <dt>所在地</dt><dd>${esc(l.prefecture)} ${esc(l.mapCity)}</dd>
+          <dt>対象</dt><dd>${esc((l.organisms||[]).join('・'))}</dd>
+          <dt>確認日</dt><dd>${esc(l.lastReview||l.checked||'')}</dd>
+        </dl></section>
+        <div class="fixes"><button type="button" class="fix" id="fixbtn">情報の修正を送る</button><button type="button" class="fix" id="rmbtn">掲載の取り下げを依頼</button></div>`;
+      list.appendChild(d);
+      $('fixbtn').onclick = () => openPost(l, '修正');
+      $('rmbtn').onclick = () => openPost(l, '取り下げ');
+      const same = current.filter(x=>siteKey(x)===siteKey(l) && x.id!==l.id);
+      if(same.length){
+        const h = document.createElement('div'); h.className='sub'; h.textContent = `同じキャンパスの研究室（${same.length}）`;
+        list.appendChild(h); same.forEach(x=>list.appendChild(item(x)));
+      }
+      return;
+    }
+    head.innerHTML = `<h2>研究室</h2><p>${current.length}件・北から順。点か名前をクリック</p>${keyHtml()}`;
+    if(!current.length){ list.innerHTML = '<div class="empty">該当なし</div>'; return; }
+    current.slice().sort((a,b)=>b.latitude-a.latitude||a.name.localeCompare(b.name,'ja')).forEach(l=>list.appendChild(item(l)));
+  }
+
+  function select(id){
+    state.lab = id;
+    document.querySelector('.stage').classList.toggle('has-lab', !!id);
+    if(map) map.invalidateSize({pan:false});
+    refreshPins(); renderPanel();
+    if(id && map){
+      const l = labs.find(x=>x.id===id);
+      map.flyTo([l.latitude,l.longitude], Math.max(map.getZoom(), 8), {duration:0.6});
+    }
+  }
+  function renderList(){
+    const rows = current.slice().sort((a,b)=>b.latitude-a.latitude||a.name.localeCompare(b.name,'ja'));
+    $('lempty').hidden = rows.length>0;
+    $('rows').innerHTML = rows.map(l=>`
+      <tr class="row" data-id="${esc(l.id)}">
+        <td class="nm"><b><span class="ic t ${l.scope==='core'?'':'related'}">${ticons(l,15)}</span>${esc(l.name)}</b><span class="inst">${esc(l.institution)}</span>${l.leaders?`<span class="who"><i>研究者</i>${esc(l.leaders)}</span>`:''}</td>
+        <td class="loc">${esc(l.prefecture)}<small>${esc(l.mapCity)}</small></td>
+        <td class="sc"><span class="pill ${l.scope}">${l.scope==='core'?'主分野':'関連分野'}</span></td>
+        <td class="ds"><span class="ai ai-row">AIによる要約</span>${esc(l.description)}</td>
+        <td class="lk"><a href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener noreferrer">${esc(l.linkType||'公式ページ')} ↗</a><button type="button" class="tomap">地図で見る</button></td>
+      </tr>`).join('');
+  }
+  function setView(v){
+    const list = v==='list';
+    document.querySelector('.stage').hidden = list;
+    $('listview').hidden = !list;
+    document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected', String(b.dataset.view===v)));
+    if(!list && map) setTimeout(()=>map.invalidateSize(), 0);
+  }
+  document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+    setView(b.dataset.view);
+    try{ history.replaceState(null,'', b.dataset.view==='list' ? '#list' : location.pathname + location.search); }catch(e){}
+  }));
+  $('rows').addEventListener('click', e => {
+    const b = e.target.closest('.tomap'); if(!b) return;
+    setView('map'); select(b.closest('tr.row').dataset.id);
+  });
+
+  function apply(){
+    current = filtered();
+    if(state.lab && !current.some(l=>l.id===state.lab)) state.lab = null;
+    $('n').textContent = current.length;
+    document.querySelectorAll('.seg button').forEach(b=>b.classList.toggle('on', b.dataset.scope===state.scope));
+    $('thkey').innerHTML = keyHtml();
+    renderMarkers(); renderPanel(); renderList();
+  }
+
+  document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{ state.scope=b.dataset.scope; apply(); }));
+  let t; $('q').addEventListener('input', e => { clearTimeout(t); t=setTimeout(()=>{ state.q=e.target.value; apply(); }, 100); });
+  $('home').onclick = () => { select(null); fitAll(); };
+  document.addEventListener('keydown', e => { if(e.key==='Escape' && state.lab && !dlgBusy) select(null); });
+
+  // ---- 投稿 ----
+  const REPO_URL = 'https://github.com/Tomikent/marine-microbe-labs-japan/issues/new';
+  const issueUrl = (l, kind) => {
+    const q = new URLSearchParams({template: kind==='取り下げ' ? 'remove.yml' : 'lab.yml'});
+    if(l){ q.set('name', l.name); q.set('institution', l.institution); q.set('url', l.url||'');
+      if(kind==='修正') q.set('kind','掲載内容を直したい'); }
+    return REPO_URL + '?' + q.toString();
+  };
+  let dlgBusy = false;
+  const dlg = $('postdlg'), form = $('postform'), msg = $('postmsg');
+  const hasClaude = !!(window.claude && window.claude.use);
+  const dbP = hasClaude ? window.claude.use('db').catch(()=>null) : Promise.resolve(null);
+  const userP = hasClaude ? window.claude.use('user').catch(()=>null) : Promise.resolve(null);
+  const setMsg = (t,c) => { msg.textContent = t; msg.className = c||''; };
+  function openPost(l, kind){
+    if(!hasClaude){ window.open(issueUrl(l, kind),'_blank','noopener'); return; }
+    form.reset(); setMsg(''); $('postsend').disabled = false;
+    if(l){
+      form.elements.kind.value = kind||'修正'; form.elements.name.value = l.name; form.elements.institution.value = l.institution;
+      form.elements.url.value = l.url||''; form.elements.leaders.value = l.leaders||''; form.elements.place.value = `${l.prefecture} ${l.mapCity||''}`.trim();
+      form.dataset.labId = l.id;
+    } else { delete form.dataset.labId; if(kind) form.elements.kind.value = kind; }
+    dlgBusy = true; dlg.showModal(); loadInbox();
+  }
+  $('postbtn').onclick = () => openPost(null);
+  $('rmlink').onclick = e => { e.preventDefault(); openPost(null, '取り下げ'); };
+  $('postclose').onclick = () => dlg.close();
+  dlg.addEventListener('close', () => setTimeout(()=>{ dlgBusy = false; }, 50));
+  dlg.addEventListener('click', e => { if(e.target===dlg) dlg.close(); });
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const name = form.elements.name.value.trim(), inst = form.elements.institution.value.trim();
+    if(!name || !inst){ setMsg('研究室名と大学・機関を入れてください','err'); (name?form.elements.institution:form.elements.name).focus(); return; }
+    const db = await dbP;
+    if(!db){ setMsg('送信にはclaude.aiへのサインインが必要です','err'); return; }
+    $('postsend').disabled = true; setMsg('送信中…');
+    const rec = { kind: form.elements.kind.value, name, institution: inst, url: form.elements.url.value.trim(), leaders: form.elements.leaders.value.trim(),
+      place: form.elements.place.value.trim(), organisms: [...form.querySelectorAll('input[name=org]:checked')].map(x=>x.value),
+      body: form.elements.body.value.trim(), labId: form.dataset.labId||'', createdAt: new Date().toISOString(), status: 'new' };
+    try{
+      const user = await userP; const uid = user && await user.id();
+      if(!uid) throw {code:'invalid_argument'};
+      const ref = db.doc('submissions/'+uid);
+      const cur = await ref.get(); const items = ((cur.exists && cur.data()?.items) || []).slice(-49);
+      items.push(rec); await ref.set({items});
+      setMsg('送信しました。ありがとうございます。','ok'); form.reset(); delete form.dataset.labId; loadInbox();
+      setTimeout(()=>{ $('postsend').disabled = false; }, 1500);
+    }catch(err){
+      $('postsend').disabled = false;
+      setMsg(err && err.code==='invalid_argument' ? '送信する権限がありません。作成者に「入力できる」権限で共有してもらってください' : '送信できませんでした。少し待ってからもう一度お試しください','err');
+    }
+  });
+  async function loadInbox(){
+    const box = $('inbox'); box.hidden = true;
+    const [db, user] = await Promise.all([dbP, userP]);
+    if(!db || !user || !(await user.canEdit().catch(()=>false))) return;
+    try{
+      const snap = await db.collection('submissions').limit(200).get();
+      const rows = snap.docs.flatMap(d=>(d.data()||{}).items||[]).sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt))).slice(0,50);
+      box.innerHTML = `<h3>届いた投稿（${rows.length}件）</h3>` + (rows.length ? rows.map(r=>`<div class="s"><b>[${esc(r.kind)}] ${esc(r.name)}</b>／${esc(r.institution)}<br><small>${esc([(r.createdAt||'').slice(0,10), r.place, (r.organisms||[]).join('・'), r.leaders].filter(Boolean).join('　'))}</small>${r.url?`<br><small>${esc(r.url)}</small>`:''}${r.body?`<br>${esc(r.body)}`:''}</div>`).join('') : '<small>まだありません</small>');
+      box.hidden = false;
+    }catch(e){}
+  }
+
+  document.addEventListener('click', e => {
+    const b = e.target.closest('.kbtn'); if(!b) return;
+    const k = b.dataset.kind || null;
+    state.kind = (state.kind===k) ? null : k; apply();
+  });
+  $('legend').innerHTML = '<span><i style="background:var(--core)"></i>主分野</span><span><i style="background:var(--related)"></i>関連分野</span>';
+  if(typeof L !== 'undefined') initMap();
+  else $('map').innerHTML = '<div class="empty">地図を読み込めませんでした。右の一覧から選べます。</div>';
+  apply();
+  const hid = location.hash.replace(/^#(lab=)?/, '');
+  if(hid==='list') setView('list');
+  else if(hid && labs.some(l=>l.id===hid)) select(hid);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+name: 研究室の追加・修正
+description: 掲載したい研究室や、掲載内容の誤りを教えてください（取り下げは別のフォームから）
+title: "[研究室] "
+labels: ["研究室"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        わかる範囲で入力してください。必須は「種類」「研究室名」「大学・機関」「URL」だけです。
+        内容を確認してから掲載します。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 種類
+      options:
+        - 新しく追加したい
+        - 掲載内容を直したい
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: 研究室名
+      placeholder: 例）海洋微生物学研究室
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: 大学・機関（学部・研究科）
+      placeholder: 例）○○大学 大学院△△研究科
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 研究室HP（なければ研究者のページ）のURL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: organisms
+    attributes:
+      label: 対象（複数選択可）
+      multiple: true
+      options:
+        - 細菌・古細菌
+        - プランクトン（微細藻類・原生生物）
+        - ウイルス
+        - わからない
+  - type: input
+    id: leaders
+    attributes:
+      label: 研究者名
+  - type: input
+    id: place
+    attributes:
+      label: キャンパスの所在地
+      placeholder: 例）高知県 南国市
+  - type: textarea
+    id: research
+    attributes:
+      label: 研究内容（1〜2文）
+      placeholder: 例）沿岸の赤潮プランクトンとそれに感染するウイルスの生態を研究
+  - type: textarea
+    id: note
+    attributes:
+      label: メモ（直してほしい箇所など）

@@ -1,0 +1,30 @@
+name: 掲載の取り下げ
+description: 研究室の掲載をやめてほしい場合はこちらから
+title: "[取り下げ] "
+labels: ["取り下げ"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        掲載している研究室の取り下げを受け付けます。確認でき次第、一覧と地図から削除します。
+        理由の記入は不要です。
+  - type: input
+    id: name
+    attributes:
+      label: 研究室名
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: 大学・機関
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 掲載中のリンク（分かれば）
+  - type: textarea
+    id: note
+    attributes:
+      label: メモ（任意）
