@@ -4014,6 +4014,40 @@ window.LABS = [
   "checked": "2026-11-02"
  },
  {
+  "id": "nibb-minagawa-photobiology",
+  "name": "環境光生物学研究部門",
+  "institution": "基礎生物学研究所",
+  "prefecture": "愛知県",
+  "mapCity": "岡崎市",
+  "latitude": 34.9575,
+  "longitude": 137.165,
+  "scope": "related",
+  "leaders": "皆川 純",
+  "themes": [
+   "光合成",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "分子生物学",
+   "構造生物学",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "光捕集系",
+   "光合成超分子複合体",
+   "光防御",
+   "植物プランクトン"
+  ],
+  "description": "微細藻類の光捕集系の構造と生理を中心に、光合成の超分子複合体と環境への適応、植物プランクトンと地球温暖化の関わりを研究。",
+  "url": "https://www.nibb.ac.jp/photo/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-11-03",
+  "checked": "2026-11-03"
+ },
+ {
   "id": "jamstec-xstar",
   "name": "生命地球科学研究部門",
   "institution": "JAMSTEC 横須賀本部",
