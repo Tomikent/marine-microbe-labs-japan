@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="日本国内の海洋微生物の研究室（関連分野含む）を、地図と一覧から探せるリンク集。">
 <meta name="theme-color" content="#0057b7">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Marine Microbiology Labs Japan">
+<meta property="og:description" content="日本国内の海洋微生物の研究室（関連分野含む）を、地図と一覧から探せるリンク集。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tomikent.github.io/marine-microbe-labs-japan/">
+<meta property="og:image" content="https://tomikent.github.io/marine-microbe-labs-japan/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <title>Marine Microbiology Labs Japan｜地図</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
@@ -28,7 +36,8 @@ button{cursor:pointer}
 
 /* 1行ヘッダー */
 .bar{flex:0 0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 16px;background:var(--deep);color:#fff}
-.bar h1{margin:0;font-size:16px;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+.bar h1{margin:0;font-size:16px;font-weight:700;letter-spacing:.02em;white-space:nowrap;display:flex;align-items:center}
+.bar h1 .logo{width:30px;height:30px;border-radius:50%;background:#fff;margin-right:9px;flex:0 0 auto}
 .bar h1 small{font-weight:400;color:#b8d6ff;margin-left:8px;font-size:12px}
 .search{flex:1 1 220px;display:flex;align-items:center;height:34px;padding:0 10px;border-radius:9px;background:#fff}
 .search input{flex:1;border:0;outline:none;min-width:0;font-size:13px;color:var(--ink);background:transparent}
@@ -198,7 +207,7 @@ th .kinds{display:flex;margin:6px 0 0;font-weight:400;max-width:460px}
 </head>
 <body>
 <header class="bar">
-  <h1>Marine Microbiology Labs Japan<small>日本の海洋微生物ラボ</small></h1>
+  <h1><img class="logo" src="logo-sm.png" alt="" width="30" height="30">Marine Microbiology Labs Japan<small>日本の海洋微生物ラボ</small></h1>
   <label class="search"><input id="q" type="search" placeholder="研究室・大学・研究者・キーワード" aria-label="検索" autocomplete="off"></label>
   <div class="seg" role="group" aria-label="掲載区分">
     <button type="button" data-scope="all" class="on">すべて</button>

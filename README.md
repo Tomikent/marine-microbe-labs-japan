@@ -1,3 +1,7 @@
+<div align="center">
+<img src="logo.png" width="220" alt="Marine Microbiology Labs Japan">
+</div>
+
 # Marine Microbiology Labs Japan
 
 日本国内の海洋微生物の研究室（関連分野含む）を、地図と一覧から探せるリンク集です。
