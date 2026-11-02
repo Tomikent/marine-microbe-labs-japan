@@ -1,5 +1,5 @@
 // 自動生成ファイル：直接編集せず data/labs.json を編集して tools/build_data.py を実行
-window.LABS_UPDATED = "2026-10-29";
+window.LABS_UPDATED = "2026-11-02";
 window.LABS = [
  {
   "id": "hokudai-marine-microbiology",
@@ -3749,6 +3749,41 @@ window.LABS = [
   ],
   "lastReview": "2026-10-29",
   "checked": "2026-10-29"
+ },
+ {
+  "id": "ishinomaki-senshu-oota",
+  "name": "海洋浮遊生物学研究室",
+  "institution": "石巻専修大学 理工学部",
+  "prefecture": "宮城県",
+  "mapCity": "石巻市",
+  "latitude": 38.4497,
+  "longitude": 141.2722,
+  "scope": "core",
+  "leaders": "太田 尚志",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "真核微生物",
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "プランクトン",
+   "微小動物プランクトン",
+   "クラゲ",
+   "貝毒",
+   "海洋食物連鎖"
+  ],
+  "description": "石巻湾や宮城県北部沿岸で、微小動物プランクトンなど原生生物やクラゲの生態、下痢性貝毒の原因となる渦鞭毛藻ディノフィシスの発生要因などを研究。",
+  "url": "https://kjs.acc.senshu-u.ac.jp/isshhp/KgApp?resId=S001465",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-11-02",
+  "checked": "2026-11-02"
  },
  {
   "id": "jamstec-xstar",
