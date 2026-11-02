@@ -3752,35 +3752,56 @@
   },
   {
     "id": "fra-masuda-singlecell",
-    "name": "増田研究室",
-    "institution": "水産研究・教育機構 水産資源研究所 水産資源研究センター（塩釜）",
+    "name": "水産資源研究所（塩釜）",
+    "institution": "水産研究・教育機構 水産資源研究所 水産資源研究センター",
     "prefecture": "宮城県",
     "region": "北海道・東北",
     "mapCity": "塩竈市",
     "latitude": 38.312,
     "longitude": 141.031,
-    "leaders": "増田 貴子",
+    "leaders": "増田 貴子・桑田 晃・田所 和明・岡崎 雄二",
     "themes": [
       "生態・物質循環",
       "微細藻・原生生物"
     ],
     "organisms": [
       "微細藻類",
-      "細菌"
+      "細菌",
+      "真核微生物"
     ],
     "methods": [
       "海洋観測",
       "培養・生理実験"
     ],
     "tags": [
+      "親潮",
+      "珪藻ブルーム",
+      "パルマ藻",
       "シングルセル解析",
-      "一次生産",
-      "窒素固定",
-      "Crocosphaera"
+      "動物プランクトン",
+      "窒素固定"
     ],
-    "description": "植物プランクトンや窒素固定シアノバクテリアの炭素・窒素の取り込みを細胞1つずつ測り、海の生物生産を見直す研究。",
-    "url": "https://researchmap.jp/takakomasuda",
-    "linkType": "researchmap",
+    "description": "親潮域を中心に、珪藻ブルームやパルマ藻の生物学、植物プランクトン・窒素固定シアノバクテリアの細胞ごとの炭素・窒素の取り込み、動物プランクトンのモニタリングなどを研究。",
+    "url": "https://www.fra.go.jp/shigen/",
+    "linkType": "公式紹介ページ",
+    "extraLinks": [
+      {
+        "label": "researchmap（増田 貴子）",
+        "url": "https://researchmap.jp/takakomasuda"
+      },
+      {
+        "label": "researchmap（桑田 晃）",
+        "url": "https://researchmap.jp/akuwata"
+      },
+      {
+        "label": "researchmap（田所 和明）",
+        "url": "https://researchmap.jp/tadokoro_kazuaki"
+      },
+      {
+        "label": "researchmap（岡崎 雄二）",
+        "url": "https://researchmap.jp/okazaki-y"
+      }
+    ],
     "scope": "core",
     "checked": "2026-10-29",
     "lastReview": "2026-10-29",
