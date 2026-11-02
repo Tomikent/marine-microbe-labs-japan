@@ -463,6 +463,19 @@ const labs = window.LABS || [];
   document.addEventListener('keydown', e => { if(e.key==='Escape' && state.lab && !dlgBusy) select(null); });
 
   // ---- 投稿 ----
+  // 投稿は Google フォーム（アカウントなしで送れる）
+  const GFORM = 'https://docs.google.com/forms/d/e/1FAIpQLScZexKD9ZMVBIU6HGvxZvkAmbIja_D99QdabPEnDhZZvvbTkg/viewform';
+  const GF_ENTRY = { kind:'', name:'', inst:'', url:'' };   // 事前入力の entry 番号（分かれば入れる）
+  const KIND_TEXT = { '修正':'掲載内容を直したい', '取り下げ':'掲載の取り下げ' };
+  const gformUrl = (l, kind) => {
+    const q = new URLSearchParams();
+    if(GF_ENTRY.name && (l || kind)){
+      q.set('usp','pp_url');
+      if(kind && GF_ENTRY.kind) q.set('entry.'+GF_ENTRY.kind, KIND_TEXT[kind] || '新しく追加したい');
+      if(l){ q.set('entry.'+GF_ENTRY.name, l.name); q.set('entry.'+GF_ENTRY.inst, l.institution); if(GF_ENTRY.url) q.set('entry.'+GF_ENTRY.url, l.url||''); }
+    }
+    const qs = q.toString(); return GFORM + (qs ? '?'+qs : '');
+  };
   const REPO_URL = 'https://github.com/Tomikent/marine-microbe-labs-japan/issues/new';
   const issueUrl = (l, kind) => {
     const q = new URLSearchParams({template: kind==='取り下げ' ? 'remove.yml' : 'lab.yml'});
@@ -477,7 +490,7 @@ const labs = window.LABS || [];
   const userP = hasClaude ? window.claude.use('user').catch(()=>null) : Promise.resolve(null);
   const setMsg = (t,c) => { msg.textContent = t; msg.className = c||''; };
   function openPost(l, kind){
-    if(!hasClaude){ window.open(issueUrl(l, kind),'_blank','noopener'); return; }
+    window.open(gformUrl(l, kind),'_blank','noopener'); return;
     form.reset(); setMsg(''); $('postsend').disabled = false;
     if(l){
       form.elements.kind.value = kind||'修正'; form.elements.name.value = l.name; form.elements.institution.value = l.institution;
