@@ -1,5 +1,5 @@
 // 自動生成ファイル：直接編集せず data/labs.json を編集して tools/build_data.py を実行
-window.LABS_UPDATED = "2026-11-02";
+window.LABS_UPDATED = "2026-11-03";
 window.LABS = [
  {
   "id": "hokudai-marine-microbiology",
@@ -3741,25 +3741,28 @@ window.LABS = [
   "latitude": 34.807,
   "longitude": 135.455,
   "scope": "related",
-  "leaders": "松尾 太郎",
+  "leaders": "松尾 太郎・三輪 久美子・熊沢 穣",
   "themes": [
    "光合成",
-   "ゲノム・進化"
+   "ゲノム・進化",
+   "微細藻・原生生物"
   ],
   "organisms": [
-   "細菌"
+   "細菌",
+   "微細藻類"
   ],
   "methods": [
    "バイオインフォマティクス"
   ],
   "tags": [
    "シアノバクテリア",
+   "真核微細藻類",
    "光合成色素",
    "集光アンテナ",
    "海洋の光環境",
    "バイオシグネチャー"
   ],
-  "description": "太古の海の光環境とシアノバクテリアの光合成色素・集光アンテナの進化を研究し、系外惑星の生命探査（バイオシグネチャー）にもつなげる。",
+  "description": "太古の海の光環境と、シアノバクテリアや真核の微細藻類の光合成色素・集光アンテナの進化を研究し、系外惑星の生命探査（バイオシグネチャー）にもつなげる。",
   "url": "https://lipes.ess.sci.osaka-u.ac.jp/index.html",
   "linkType": "研究室HP",
   "extraLinks": [
@@ -3768,8 +3771,8 @@ window.LABS = [
     "url": "https://researchmap.jp/taromatsuo"
    }
   ],
-  "lastReview": "2026-10-29",
-  "checked": "2026-10-29"
+  "lastReview": "2026-11-03",
+  "checked": "2026-11-03"
  },
  {
   "id": "ishinomaki-senshu-oota",
