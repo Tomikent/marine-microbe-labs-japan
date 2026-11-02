@@ -3786,6 +3786,210 @@ window.LABS = [
   "checked": "2026-11-02"
  },
  {
+  "id": "hokudai-plankton-matsuno",
+  "name": "浮遊生物学研究室（北大プランクトン教室）",
+  "institution": "北海道大学 大学院水産科学研究院 海洋生物学分野",
+  "prefecture": "北海道",
+  "mapCity": "函館市",
+  "latitude": 41.836,
+  "longitude": 140.771,
+  "scope": "core",
+  "leaders": "松野 孝平",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測",
+   "培養・生理実験"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "動物プランクトン",
+   "北極・南極",
+   "海氷",
+   "珪藻"
+  ],
+  "description": "亜寒帯や北極・南極の海で、植物プランクトンと動物プランクトンの生理・生態・生活史や、海氷下の珪藻の生産を研究。",
+  "url": "http://hu-plankton.jp/",
+  "linkType": "研究室HP",
+  "lastReview": "2026-11-02",
+  "checked": "2026-11-02"
+ },
+ {
+  "id": "hokudai-akkeshi-isada",
+  "name": "厚岸臨海実験所",
+  "institution": "北海道大学 北方生物圏フィールド科学センター",
+  "prefecture": "北海道",
+  "mapCity": "厚岸町",
+  "latitude": 43.021,
+  "longitude": 144.838,
+  "scope": "core",
+  "leaders": "伊佐田 智規",
+  "themes": [
+   "生態・物質循環",
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "細菌"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "基礎生産",
+   "ブルーム",
+   "海色リモートセンシング",
+   "親潮"
+  ],
+  "description": "厚岸湾や沿岸親潮域で、植物プランクトンの基礎生産とブルームの動態、光合成や海色リモートセンシング、沿岸の炭素循環を研究。",
+  "url": "https://researchers.general.hokudai.ac.jp/profile/ja.Cu1pUQKaHceUqhBCgh4lOg==.html",
+  "linkType": "公式紹介ページ",
+  "extraLinks": [
+   {
+    "label": "実験所の研究紹介",
+    "url": "https://www.fsc.hokudai.ac.jp/akkeshi/study.html"
+   }
+  ],
+  "lastReview": "2026-11-02",
+  "checked": "2026-11-02"
+ },
+ {
+  "id": "tokai-sapporo-nosaka",
+  "name": "野坂研究室",
+  "institution": "東海大学 生物学部 海洋生物科学科",
+  "prefecture": "北海道",
+  "mapCity": "札幌市",
+  "latitude": 42.98,
+  "longitude": 141.29,
+  "scope": "core",
+  "leaders": "野坂 裕一",
+  "themes": [
+   "微細藻・原生生物",
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "植物プランクトン",
+   "珪藻",
+   "アイスアルジー",
+   "TEP",
+   "表面マイクロレイヤー"
+  ],
+  "description": "親潮域・噴火湾・サロマ湖で、珪藻やアイスアルジーなどの植物プランクトンと、TEP などのゲル粒子が物質循環で果たす役割を研究。",
+  "url": "https://www.u-tokai.ac.jp/facultyguide/faculty/4183/en/",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-11-02",
+  "checked": "2026-11-02"
+ },
+ {
+  "id": "hokudai-iltl-nishioka",
+  "name": "西岡研究室",
+  "institution": "北海道大学 低温科学研究所",
+  "prefecture": "北海道",
+  "mapCity": "札幌市",
+  "latitude": 43.081,
+  "longitude": 141.341,
+  "scope": "related",
+  "leaders": "西岡 純",
+  "themes": [
+   "生態・物質循環"
+  ],
+  "organisms": [
+   "微細藻類"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "鉄",
+   "微量金属",
+   "栄養塩",
+   "オホーツク海",
+   "植物プランクトン"
+  ],
+  "description": "オホーツク海や北太平洋で、鉄などの微量金属と栄養塩の循環が植物プランクトンの生産を支える仕組みを研究。",
+  "url": "https://researchmap.jp/read0129269",
+  "linkType": "researchmap",
+  "lastReview": "2026-11-02",
+  "checked": "2026-11-02"
+ },
+ {
+  "id": "tohoku-sci-suzuki-noritoshi",
+  "name": "鈴木紀毅研究室",
+  "institution": "東北大学 大学院理学研究科 地学専攻",
+  "prefecture": "宮城県",
+  "mapCity": "仙台市",
+  "latitude": 38.256,
+  "longitude": 140.84,
+  "scope": "related",
+  "leaders": "鈴木 紀毅",
+  "themes": [
+   "微細藻・原生生物",
+   "ゲノム・進化"
+  ],
+  "organisms": [
+   "真核微生物"
+  ],
+  "methods": [
+   "分子生物学"
+  ],
+  "tags": [
+   "放散虫",
+   "微古生物学",
+   "プランクトン",
+   "分類"
+  ],
+  "description": "放散虫を中心に、プランクトン学と微古生物学の両面から分類・生態・化石記録を研究。",
+  "url": "https://www.r-info.tohoku.ac.jp/ja/91827fe5b08207ebd15a627fcc1c0d56.html",
+  "linkType": "公式紹介ページ",
+  "lastReview": "2026-11-02",
+  "checked": "2026-11-02"
+ },
+ {
+  "id": "akita-ando-takuto",
+  "name": "安藤研究室",
+  "institution": "秋田大学 大学院国際資源学研究科",
+  "prefecture": "秋田県",
+  "mapCity": "秋田市",
+  "latitude": 39.727,
+  "longitude": 140.134,
+  "scope": "related",
+  "leaders": "安藤 卓人",
+  "themes": [
+   "微細藻・原生生物"
+  ],
+  "organisms": [
+   "微細藻類",
+   "真核微生物"
+  ],
+  "methods": [
+   "海洋観測"
+  ],
+  "tags": [
+   "渦鞭毛藻シスト",
+   "有機質微化石",
+   "古環境",
+   "プランクトン生態系"
+  ],
+  "description": "渦鞭毛藻シストなどの有機質微化石を手がかりに、汽水域や海域の古環境とプランクトン生態系を復元する研究。",
+  "url": "https://researchmap.jp/takutoando",
+  "linkType": "researchmap",
+  "lastReview": "2026-11-02",
+  "checked": "2026-11-02"
+ },
+ {
   "id": "jamstec-xstar",
   "name": "生命地球科学研究部門",
   "institution": "JAMSTEC 横須賀本部",
