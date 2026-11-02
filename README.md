@@ -6,7 +6,7 @@
 **サイト：https://tomikent.github.io/marine-microbe-labs-japan/**
 
 > [!TIP]
-> **載っていない研究室や情報の誤りを見つけたら、フォームから教えてください（GitHub アカウントがあれば誰でも送れます）**
+> **載っていない研究室や情報の誤りを見つけたら、フォームから教えてください（GitHub アカウントが必要です）**
 >
 > [![研究室を投稿する](https://img.shields.io/badge/%E7%A0%94%E7%A9%B6%E5%AE%A4%E3%82%92%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B-2ea44f?style=for-the-badge)](https://github.com/Tomikent/marine-microbe-labs-japan/issues/new?template=lab.yml)
 > [![掲載の取り下げ](https://img.shields.io/badge/%E6%8E%B2%E8%BC%89%E3%81%AE%E5%8F%96%E3%82%8A%E4%B8%8B%E3%81%92-6e7781?style=for-the-badge)](https://github.com/Tomikent/marine-microbe-labs-japan/issues/new?template=remove.yml)
