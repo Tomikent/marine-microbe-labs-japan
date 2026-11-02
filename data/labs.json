@@ -4287,6 +4287,43 @@
     "checked": "2026-11-03"
   },
   {
+    "id": "fra-nagasaki-shikata",
+    "name": "水産技術研究所（長崎）",
+    "institution": "水産研究・教育機構 水産技術研究所",
+    "prefecture": "長崎県",
+    "region": "九州・沖縄",
+    "mapCity": "五島市",
+    "latitude": 32.64,
+    "longitude": 128.65,
+    "leaders": "紫加田 知幸",
+    "themes": [
+      "微細藻・原生生物",
+      "生態・物質循環"
+    ],
+    "organisms": [
+      "微細藻類"
+    ],
+    "methods": [
+      "海洋観測",
+      "培養・生理実験",
+      "分子生物学"
+    ],
+    "tags": [
+      "赤潮",
+      "有害藻類",
+      "シャットネラ",
+      "日周鉛直移動",
+      "珪藻"
+    ],
+    "description": "シャットネラなど有害赤潮藻の日周鉛直移動や細胞が集まるしくみ、光と光合成、沿岸珪藻の休眠細胞の発芽など、赤潮の生理生態を研究。",
+    "url": "https://researchmap.jp/chattonella",
+    "linkType": "researchmap",
+    "scope": "core",
+    "addedOn": "2026-11-03",
+    "lastReview": "2026-11-03",
+    "checked": "2026-11-03"
+  },
+  {
     "id": "jamstec-xstar",
     "name": "生命地球科学研究部門",
     "institution": "JAMSTEC 横須賀本部",
