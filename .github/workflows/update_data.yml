@@ -28,5 +28,5 @@ jobs:
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git add data/labs.js data/labs.csv
+          git add data/labs.js data/labs.csv index.html
           git diff --cached --quiet || (git commit -m 'update labs.js / labs.csv (auto)' && git push origin main)

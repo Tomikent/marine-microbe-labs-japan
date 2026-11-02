@@ -54,6 +54,15 @@ def main() -> int:
         f"window.LABS = {payload};\n",
         encoding="utf-8",
     )
+    # ブラウザが古いデータを使い続けないよう、index.html の読み込みに版番号を付ける
+    import hashlib, re
+    ver = hashlib.sha1(payload.encode("utf-8")).hexdigest()[:8]
+    index = ROOT / "index.html"
+    if index.exists():
+        html = index.read_text(encoding="utf-8")
+        html2 = re.sub(r'data/labs\.js(\?v=[0-9a-f]+)?"', f'data/labs.js?v={ver}"', html)
+        if html2 != html:
+            index.write_text(html2, encoding="utf-8")
     with open(DATA / "labs.csv", "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
         w.writerow(CSV_COLS)
